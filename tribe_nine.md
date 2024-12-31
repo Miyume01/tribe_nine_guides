@@ -64,7 +64,6 @@ Suggested sets for characters:
 
 As the developers have said, the game offers the freedom of playing however the player prefers, hence depending on preferences one could run an attack set on Kazuki or Hyakuichitaro.
 
-
 # Rank up materials
 
 | Innovative<br />![1735588336833](image/tribe_nine/1735588336833.png) | Tech<br /><br />![1735588344965](image/tribe_nine/1735588344965.png) | Accurate<br />![1735588352263](image/tribe_nine/1735588352263.png) |
@@ -74,7 +73,6 @@ As the developers have said, the game offers the freedom of playing however the 
 | **Gotanda**                                                  | **Miu**                                                      | **Tsuki**                                                  |
 | **Kazuki**                                                   | **Oi**                                                       | **Hyakuichitaro**                                          |
 |                                                                    | **Q**                                                        | **Eiji**                                                   |
-
 
 # Enemies
 
@@ -103,7 +101,7 @@ Lunge & Spin
 
 Will only do this attack in EX mode.
 
-The laser drone
+## The laser drone
 
 ---
 
@@ -115,9 +113,11 @@ Tension EX:
 
 Triple Lasers
 
-![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXc3FY1n47mRqTeyxUIHDElwUsBP0selA2e8gvUIx0O_hmhCfzjhqniE9XJTc93w1JMCUoPVIFS0ZUSfwrxPLcs9quaRBLXdGyInRJbMyERgbTRJHrzo174tze2gsjv1uA3WNQGnMg?key=9uMy6KMyQuox_UXkLhPhJPI9)Will only do this attack in EX mode.
+![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXc3FY1n47mRqTeyxUIHDElwUsBP0selA2e8gvUIx0O_hmhCfzjhqniE9XJTc93w1JMCUoPVIFS0ZUSfwrxPLcs9quaRBLXdGyInRJbMyERgbTRJHrzo174tze2gsjv1uA3WNQGnMg?key=9uMy6KMyQuox_UXkLhPhJPI9)
 
-The orb drone
+Will only do this attack in EX mode.
+
+## The orb drone
 
 ---
 
@@ -129,9 +129,11 @@ Tension EX:
 
 Bullet Hell
 
-![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXdg79-8rdH-92_Hw6CvD-ZgV1wR1KMpjBYpaL0_K0ar7ir7SjjhX64kTtMHagTi4Rp_mOXWk6iyGELgiIuq98zSplSPpEJJg6ptjfvloUq8jbwjThKGXVm_0-xDs87d_SkBeRvYrA?key=9uMy6KMyQuox_UXkLhPhJPI9)Will only do this attack in EX mode.
+![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXdg79-8rdH-92_Hw6CvD-ZgV1wR1KMpjBYpaL0_K0ar7ir7SjjhX64kTtMHagTi4Rp_mOXWk6iyGELgiIuq98zSplSPpEJJg6ptjfvloUq8jbwjThKGXVm_0-xDs87d_SkBeRvYrA?key=9uMy6KMyQuox_UXkLhPhJPI9)
 
-Shinagawa tribe (Hammer)
+Will only do this attack in EX mode.
+
+## Shinagawa tribe (Hammer)
 
 ---
 
@@ -144,7 +146,7 @@ Triple Spin
 
 ![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXeDNoOV_DaL9MRUhF3GQS6nkkSbrLEBWjcPQBFQcX7dl_UOf98RHpSLlEyeNg3wwEgqzGsFBWk01jynLZuSijl_iK_ss1EEWYc0FwnpiRrIYMULrrBc0fcbwPKPgPI6RKv7zskg8g?key=9uMy6KMyQuox_UXkLhPhJPI9)
 
-Shinagawa tribe (Rider)
+## Shinagawa tribe (Rider)
 
 ---
 
@@ -164,7 +166,7 @@ Jump
 
 Will only use the Gas and Jump attacks. Does not use the Charge attack.
 
-Shinagawa tribe (Batter)
+## Shinagawa tribe (Batter)
 
 ---
 
@@ -184,7 +186,7 @@ Triple Swing
 
 Will only do this attack in EX mode.
 
-Shinagawa tribe (Shielder)
+## Shinagawa tribe (Shielder)
 
 ---
 
@@ -204,7 +206,7 @@ Double Shield Bash
 
 Will only do this attack in EX mode.
 
-Minion in White (Double Speed)
+## Minion in White (Double Speed)
 
 ---
 
@@ -222,7 +224,7 @@ Double Swing & Jump
 
 ![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXfaSPL9B8PtlYkBVrVqlgxSQil3Y4sRYQeoUPa1ATBOqC_PuTFnuRmbzgIn6qj_ozBP7io00XlDYZ5Qm2m7cSairKSpeO9449VlTK4ojZJdkgYuyZfG3OYfUKmD5tew2xi4ZoPg5w?key=9uMy6KMyQuox_UXkLhPhJPI9)
 
-Scheeze
+## Scheeze
 
 ---
 
@@ -236,7 +238,7 @@ Bump
 
 Attacks in tension EX do not change
 
-Mameeze
+## Mameeze
 
 ---
 
@@ -260,13 +262,17 @@ Triple Jump
 
 ![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXddVnJAAdXQQOIevXDoGErk44h--uvyKbpXAKjD34vQ0wimAVBTcWIAtR9p_E82HlFaeEqO6e-hbD8e12C7uYM0kXth4zFI_0b9Vy_r2OxzKmTem6yVhFGbJDxF_Bro-huI8IVdzg?key=9uMy6KMyQuox_UXkLhPhJPI9)
 
-Endrone
+## Endrone
 
 ---
 
 Double Attack
 
-![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXcF4SfdSnwCWcn9whEXPtvG1BbsdrPIh7OKxZdg9HKatinjlRSOroTfp4_U7RWTaicbB36xrDD0lRrWdXvz9qzb_h3IArY37aCItU00TMFZSrNuXMuTyUI5Iy2xgapf8ZL78Wk0-g?key=9uMy6KMyQuox_UXkLhPhJPI9)
+![img](https://lh7-rt.googleusercontent.com/docsz/AD_4nXcF4SfdSnwCWcn9whEXPtvG1BbsdrPIh7OKxZdg9HKatinjlRSOroTfp4_U7RWTaicbB36xrDD0lRrWdXvz9qzb_h3IArY37aCItU00TMFZSrNuXMuTyUI5Iy2xgapf8ZL78Wk0-g?key=9uMy6KMyQuox_UXkLhPhJPI9)
+
+Triple Combo
+
+![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXfKmDCKRMhUbaQVV6vaOEd1zDJkVn642PHJYnpvgy1dmZXiXiJDM88tGGTMG4i5SjIQ9wSA5hqroqBvStewuvx6AJKAybOMGwIk7FIrt42p-oMChuCcCULuqQIsz0OkMHmz-qsATQ?key=9uMy6KMyQuox_UXkLhPhJPI9)
 
 ½ + Ground Slam
 
@@ -275,10 +281,6 @@ Double Attack
 Sometimes Endrone might do the ground slam twice. It may be due to deflecting his double attack earlier in the fight(?). The attack can be identified by Endrone skipping the second swing.
 
 Swing>(skip)>ground slam>ground slam
-
-Triple Combo
-
-![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXfKmDCKRMhUbaQVV6vaOEd1zDJkVn642PHJYnpvgy1dmZXiXiJDM88tGGTMG4i5SjIQ9wSA5hqroqBvStewuvx6AJKAybOMGwIk7FIrt42p-oMChuCcCULuqQIsz0OkMHmz-qsATQ?key=9uMy6KMyQuox_UXkLhPhJPI9)
 
 Rockets
 
@@ -291,7 +293,7 @@ Blade Spin + Rockets + Ground Slam
 
 ![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXemL-UkZpw02E2ymCNTPfff_GbmF8UAmGD377eKlstFY4-IMkoI_ve-YsFjUTPg6K7e0Ss2joF4SOEpqbwhJzwi4sywjL7gjfX9RKNbgyHxM6dmqslan48vLG744P6Ps93gehhfrg?key=9uMy6KMyQuox_UXkLhPhJPI9)
 
-S.H.A.R.K
+## S.H.A.R.K
 
 ---
 
@@ -325,7 +327,7 @@ The charge can be dodged\deflected.
 
 ![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXdNxKHrGQkHK99HdfftmgmfpccwvXQuqXOHrPdJiIN92KBoHYrzMl4Qfwj6Mgb_A92UhqeX5e_iUtbY-CJzIlJ8iThD3BYsdGXtiRmbSIRaqcdmDjjGs8aMO6u2Jzi4R2aOYGXP2g?key=9uMy6KMyQuox_UXkLhPhJPI9)The leftover bombs will create water tornadoes upon explosion.
 
-Dive
+Double Dive
 
 A new attack that first happens at 3 health bars![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXf5UWQZf3cqUxz12BaJxi33xsMw-JfXW9aB9HTOUCxZsyvwpCaVThzagq6TG_b602MBoBlYkBzCQEPtagrYPBhMCpK59zhxig03f539A0ZEAjlJbASZ6Ei1rYNLi_FG8y8i0120Bw?key=9uMy6KMyQuox_UXkLhPhJPI9). Signified by the music going silent and non-controlled teammates stopping moving.
 
@@ -352,7 +354,7 @@ This entire sequence lasts for the ~¾ths of the EX mode’s duration.
 
 At 3 health bars![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXf5UWQZf3cqUxz12BaJxi33xsMw-JfXW9aB9HTOUCxZsyvwpCaVThzagq6TG_b602MBoBlYkBzCQEPtagrYPBhMCpK59zhxig03f539A0ZEAjlJbASZ6Ei1rYNLi_FG8y8i0120Bw?key=9uMy6KMyQuox_UXkLhPhJPI9) the Whirlpool becomes a Water tornado. The water circles' speed is greatly accelerated. At the end of the sequence the boss will perform a Dive attack on the operating character.
 
-Death Penalty
+## Death Penalty
 
 ---
 
@@ -384,6 +386,8 @@ Does this as soon as it enters EX mode. The aerial attacks will last until the e
 
 Aerial Strike dodge timing
 
+![1735591725994](image/tribe_nine/1735591725994.gif)
+
 The zones will flash yellow twice, dodge ~0.3 seconds after
 
 Triple Rocket Shot + Crane Spin
@@ -396,4 +400,4 @@ It’s possible to outrun the shots by sprinting.
 
 Good luck and have fun.
 
-![1735588797060](image/tribe_nine/1735588797060.gif)
+<img src="Fubuki_clap.gif" />
