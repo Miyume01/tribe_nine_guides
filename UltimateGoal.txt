@@ -1,0 +1,12 @@
+I started this project to support the ambitions of my friend. She's not a developer and I do not wish to take this project away from her.
+The ultimate goal of is to convert this project into such tech that a non-developer can easily create pages, add content, images, etc.
+
+For Example: Let's use HTML and .md (markdown files). We can create the body in HTML such that it takes the .md inside folders and show the content.
+This way any non-developer can create a markdown file and will be able to add or modify the content.
+
+I currently have no experience in how to acheive this goal. Though I do have few ideas to try. The project is currently in React because
+I'm most familiar with it and we can push updates easily and quickly meanwhile working on the ultimate goal. While doing through the directories,
+you will see, I have heavily used the functional block(work in progress) technique( basically creating lego blocks for everything) so that a non-developer can
+contribute with a simple documentation without going into the technecalities of the language.
+
+With this, we also need to create the aforementioned documentation as of now.
