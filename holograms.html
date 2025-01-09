@@ -5,8 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-    <body>
-        <div class="nav-content" id="section1">
+    <body class="bg-transparent">
+
+        <div id="navbar" class="-z-10"></div>
+        <script>
+            fetch('index.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('navbar').innerHTML = data;
+                })
+                .catch(error => console.error('Error loading the navbar', error));
+        </script>
+
+        <div>
             <p>
                 Click on the “holograms” tab for the full list.
             </p>
