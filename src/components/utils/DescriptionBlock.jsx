@@ -2,11 +2,11 @@ import React from 'react';
 
 function DescriptionBlock({descriptionParts = []}) {
   return (
-  <p className='m-1 pb-2 text-lg'>
+  <p className='mx-4 p-2 text-lg'>
       {descriptionParts.map((part, index) => (
         <span
           key={index}
-          className={`${part.underlineText ? 'decoration-white underline underline-offset-4' : ''}
+          className={`${part.underlineText ? 'underline underline-offset-4' : ''}
                       ${part.normalText ? 'text-white' : ''}
                       ${part.blueText ? 'text-logo-blue' : ''}
                       ${part.tensionText ? 'text-ex-mode' : ''}

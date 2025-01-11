@@ -22,14 +22,14 @@ const ImageWithModal = ({ src, alt }) => {
       <img
         src={src}
         alt={alt || "Image"}
-        className="cursor-pointer w-[400px] h-[400px]"
+        className="cursor-pointer w-[440px] h-[400px]"
         onClick={openModal}
       />
 
       {/* Modal */}
       {isModalOpen && (
         <div
-          className={`fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50
+          className={`fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center z-50
             ${isAnimating ? 'opacity-100' : 'opacity-0'}
             transition-opacity duration-300`}
           onClick={closeModal}
@@ -52,7 +52,7 @@ const ImageWithModal = ({ src, alt }) => {
             <img
               src={src}
               alt={alt || "Popup Image"}
-              className={`w-[600px] h-[600px]
+              className={`w-[729px] h-[729px]
                 ${isAnimating ? 'opacity-100' : 'opacity-0'}
                 transition-opacity duration-300`}
               id='modal-size'

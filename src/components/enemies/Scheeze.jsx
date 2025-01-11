@@ -30,7 +30,7 @@ function Scheeze() {
     <div className='flex flex-col flex-wrap h-full w-full pb-5 items-center justify-start text-white'>
         <H1Heading enemyName='Scheeze' />
         <HorizontalLine />
-
+        
         <Grid gridBlocks={NonTensionAtks}/>
     </div>
   )

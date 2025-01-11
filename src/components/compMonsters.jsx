@@ -13,7 +13,7 @@ import HorizontalLine from './utils/HorizontalLine';
 
 function CompMonsters() {
   return (
-    <div className='flex flex-col flex-wrap h-full w-[80%] pb-5 items-center justify-start text-white
+    <div className='flex flex-col flex-wrap h-full w-[70%] pb-5 items-center justify-start text-white
       bg-middle-background'>
 
       <div className='mt-10 mb-5'>

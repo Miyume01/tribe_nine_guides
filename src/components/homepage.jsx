@@ -5,7 +5,7 @@ import FubukiClap from "./Fubuki_clap.gif";
 
 function Homepage() {
   return (
-    <div className='flex flex-col flex-wrap h-full w-[80%] pb-5 items-center justify-start text-white
+    <div className='flex flex-col flex-wrap h-full w-[70%] pb-5 items-center justify-start text-white
       bg-middle-background'>
       <div className='mt-10 mb-5'>
         <H2Heading enemyAttack = 'Good luck and have fun.'/>

@@ -3,7 +3,7 @@ import GridBlock from "./GridBlock";
 
 function Grid({ gridBlocks = [] }) {
   return (
-    <div className={`grid ${gridBlocks.length === 1 ? 'place-items-center' : 'grid-cols-1 md:grid-cols-2'} gap-4 m-2 p-6`}>
+    <div className={`grid grid-cols-1 ${gridBlocks.length > 1 ? 'md:grid-cols-2' : ''} gap-1 m-2 p-6`}>
       {gridBlocks.map((block, index) => (
         <GridBlock
           key={index}

@@ -72,6 +72,9 @@ function DeathPenalty() {
         {text: 'The zones will flash yellow twice, dodge ~0.3 seconds after.', normalText: true}
       ]
     },
+  ];
+
+  const TensionAtks2 = [
     {
       enemyAtk: 'Triple Rocket Shot + Crane Spin',
       tensionEx: false,
@@ -84,7 +87,7 @@ function DeathPenalty() {
         {text: 'It’s possible to outrun the shots by sprinting.', normalText: true},
       ]
     },
-  ];
+  ]
 
   return (
     <div className='flex flex-col flex-wrap h-full w-full pb-5 items-center justify-start text-white'>
@@ -102,6 +105,7 @@ function DeathPenalty() {
         <H2Heading enemyAttack='Tension EX:' tensionEx='true'/>
 
         <Grid gridBlocks={TensionAtks} />
+        <Grid gridBlocks={TensionAtks2} />
     </div>
   )
 }
