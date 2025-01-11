@@ -82,7 +82,7 @@ function Shark() {
         imgSrc: SharkDiveInOutParry,
         imgAlt: 'Shark Dive In and Out Parry',
         description: [
-          {text: 'If the dive out is deflected, the boss doesn’t stagger, so the second attack will still need to be dodged/deflected.', normalText: true}
+          {text: 'If the dive out is deflected, the boss doesn’t stagger, so the second attack will still need to be dodged/deflected.', normalText: true, underlineText: true},
         ]
       },
     ];

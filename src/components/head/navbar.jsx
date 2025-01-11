@@ -72,7 +72,7 @@ function Navbar(){
                                 Holograms
                             </button>
                 </div>
-                <div className={`text-center w-36 px-2 py-5 flex-shrink ${ isSelected==='CompatibleMonsters' ? whenSelected : coolEffects}
+                <div className={`text-center w-36 px-2 py-2 flex-shrink ${ isSelected==='CompatibleMonsters' ? whenSelected : coolEffects}
                         hover:cursor-pointer`} onClick={() => handleNavigation('/compatible-monsters', 'CompatibleMonsters')}>
                             <button>
                                 Compatible Monsters

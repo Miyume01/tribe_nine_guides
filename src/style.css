@@ -20,7 +20,7 @@ html {
     }
 
 body {
-    /* background: rgb(25, 24, 24); */
+  
     background: #131431 ;
     z-index: -10;
     overflow-y: auto;
@@ -30,61 +30,6 @@ body {
     margin: 0;
     
 }
-
-/* .nav{
-    position: relative;
-    overflow: hidden;
-}
-
-.nav::before,
-.nav::after{
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    transition: all 0.25s ease;
-}
-
-.nav-enter::before{
-    z-index: -1;
-    border-radius: 0;
-    margin-left: -100%;
-    box-shadow: inset 0 0 0 50px #731fcc;
-    transition: all 0.25s ease;
-}
-
-.nav-enter:hover::before{
-    margin-left: 0;
-}
-
-.nav-mobile{
-  position: relative;
-  overflow: hidden;
-}
-
-.nav-mobile::before,
-.nav-mobile::after{
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  transition: all 0.25s ease;
-}
-
-.nav-enter-mobile::before{
-  z-index: -1;
-  border-radius: 0;
-  margin-left: -100%;
-  box-shadow: inset 0 0 0 50px #731fcc;
-}
-
-.nav-enter-mobile:hover::before{
-  margin-left: 0;
-} */
 
 .hologram-container img {
   width: 600px;
@@ -102,13 +47,13 @@ body {
 }
 
 #comp-monsters #modal-size {
-  width:800px;
-  height: 200px;
+  width:474px;
+  height: 124px;
 }
 
 #enigmatic-ball {
-  width: 2rem;
-  height: 2rem;
+  width: 1.4rem;
+  height: 1.4rem;
 }
 
 .card-img{

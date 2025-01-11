@@ -11,7 +11,7 @@ import OrbDroneImg from './cards_format/orb-drone.png';
 import PenaltyImg from './cards_format/Penalty.png';
 import RiderImg from './cards_format/Rider.png';
 import ScheezeImg from './cards_format/Scheeze.png';
-import SHARKImg from './cards_format/SHARK-WIP.png';
+import SHARKImg from './cards_format/SHARK1.png';
 
 const enemiesURL = [
     { name: 'Cheerzy (Speed)', url: '/enemies/cheerzy-speed', image: CheerzyImg, id: 'enemy-cheerzy' },

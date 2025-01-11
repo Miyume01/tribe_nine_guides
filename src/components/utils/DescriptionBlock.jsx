@@ -2,7 +2,7 @@ import React from 'react';
 
 function DescriptionBlock({descriptionParts = []}) {
   return (
-  <p className='m-1 pb-2 text-lg'>
+  <p className='mx-4 p-2 text-lg'>
       {descriptionParts.map((part, index) => (
         <span
           key={index}
