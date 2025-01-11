@@ -6,7 +6,7 @@ function DescriptionBlock({descriptionParts = []}) {
       {descriptionParts.map((part, index) => (
         <span
           key={index}
-          className={`${part.underlineText ? 'decoration-white underline underline-offset-4' : ''}
+          className={`${part.underlineText ? 'underline underline-offset-4' : ''}
                       ${part.normalText ? 'text-white' : ''}
                       ${part.blueText ? 'text-logo-blue' : ''}
                       ${part.tensionText ? 'text-ex-mode' : ''}
