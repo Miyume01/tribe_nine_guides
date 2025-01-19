@@ -41,6 +41,30 @@ body {
   height: 500px;
 }
 
+@media (max-width: 768px) {
+  .hologram-container img {
+    width: 400px;
+    height: 200px;
+  }
+
+  .hologram-container #modal-size {
+    width: 600px;
+    height: 300px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hologram-container img {
+    width: 200px;
+    height: 100px;
+  }
+
+  .hologram-container #modal-size {
+    width: 300px;
+    height: 100px;
+  }
+}
+
 #comp-monsters img {
   width:474px;
   height: 124px;
@@ -49,6 +73,30 @@ body {
 #comp-monsters #modal-size {
   width:474px;
   height: 124px;
+}
+
+@media (max-width: 768px) {
+  #comp-monsters img {
+    width: 220px;
+    height: 80px;
+  }
+
+  #comp-monsters #modal-size {
+    width: 600px;
+    height: 300px;
+  }
+}
+
+@media (max-width: 480px) {
+  #comp-monsters img {
+    width: 220px;
+    height: 80px;
+  }
+
+  #comp-monsters #modal-size {
+    width: 300px;
+    height: 100px;
+  }
 }
 
 #enigmatic-ball {

@@ -1,13 +1,11 @@
 import React from 'react';
+import DescriptionBlock from '../utils/DescriptionBlock';
 import Grid from '../utils/Grid';
 import H1Heading from '../utils/H1Heading';
-import H2Heading from '../utils/H2Heading';
 import HorizontalLine from '../utils/HorizontalLine';
-import ImageWithModal from '../utils/ImageWithModal';
 import CheerzyLungeAndChargeEX from './enemies_gifs/Cheerzy_lunge_and_charge_NORMAL.gif';
 import CheerzyLungeNormal from './enemies_gifs/Cheerzy_lunge_NORMAL.gif';
 import CheerzySpin from './enemies_gifs/Cheerzy_spin.gif';
-import DescriptionBlock from '../utils/DescriptionBlock';
 
 function Cheerzy() {
 
@@ -30,7 +28,8 @@ function Cheerzy() {
     const TensionAtks = [
             {
               enemyAtk: 'Lunge & Spin',
-              tensionEx: false,
+              tensionEx: true,
+              center: true,
               imgSrc: CheerzyLungeAndChargeEX,
               imgAlt: 'Cheerzy Lunge and Charge EX',
               description: [
@@ -46,24 +45,22 @@ function Cheerzy() {
         
   return (
 
-<div className='flex flex-col flex-wrap h-full w-full pb-5 items-center justify-start text-white'>
-  <H1Heading enemyName='Cheerzy (Speed)'/>
-  <HorizontalLine />
+    <div className='flex flex-col flex-wrap h-full w-full pb-5 items-center justify-start text-white'>
+      <H1Heading enemyName='Cheerzy (Speed)'/>
+      <HorizontalLine />
 
-  <DescriptionBlock descriptionParts={[
-      {text: 'Outside of ', normalText: true, semiBoldText: true},
-      {text: 'EX ', tensionText: true, semiBoldText: true},
-      {text: 'mode', tensionText: true, semiBoldText: true},
-      {text: ' will fall over after an attack.', normalText: true, semiBoldText: true},
-    ]} />
+      <DescriptionBlock descriptionParts={[
+          {text: 'Outside of ', normalText: true, semiBoldText: true},
+          {text: 'EX ', tensionText: true, semiBoldText: true},
+          {text: 'mode', tensionText: true, semiBoldText: true},
+          {text: ' will fall over after an attack.', normalText: true, semiBoldText: true},
+        ]} />
 
-  <Grid gridBlocks={NonTensionAtks} />
+      <Grid gridBlocks={NonTensionAtks} />
 
-  <H2Heading enemyAttack='Tension Ex:' tensionEx='true' />
-
-  <Grid gridBlocks={TensionAtks} />
-</div>
-  );
+      <Grid gridBlocks={TensionAtks} />
+    </div>
+    );
 }
 
 export default Cheerzy

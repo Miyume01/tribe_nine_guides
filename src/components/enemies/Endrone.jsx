@@ -1,8 +1,8 @@
 import React from 'react';
 import Grid from '../utils/Grid';
 import H1Heading from '../utils/H1Heading';
-import H2Heading from '../utils/H2Heading';
 import HorizontalLine from '../utils/HorizontalLine';
+import TensionHeading from '../utils/TensionHeading';
 import EndroneDoubleCombo from './enemies_gifs/Endrone_double_combo_NORMAL.gif';
 import EndroneRockets from './enemies_gifs/Endrone_rockets.gif';
 import EndroneTripleCombo from './enemies_gifs/Endrone_Triple_Combo.gif';
@@ -64,7 +64,7 @@ function Endrone() {
         <Grid gridBlocks={NonTensionAtks} />
 
         <HorizontalLine />
-        <H2Heading enemyAttack='Tension Ex:' tensionEx='true'/>
+        <TensionHeading />
 
         <Grid gridBlocks={TensionAtks} />
 

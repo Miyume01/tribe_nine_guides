@@ -8,9 +8,10 @@ function Grid({ gridBlocks = [] }) {
         <GridBlock
           key={index}
           enemyAtk={block.enemyAtk}
-          tensionEX={block.tensionEX}
+          tensionEx={block.tensionEx}
           imgSrc={block.imgSrc}
           imgAlt={block.imgAlt}
+          center={block.center}
           description={block.description}
         />
       ))}

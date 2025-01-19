@@ -1,16 +1,15 @@
 import React from 'react';
 import H2Heading from '../components/utils/H2Heading';
-import ImageWithModal from '../components/utils/ImageWithModal';
 import FubukiClap from "./Fubuki_clap.gif";
+import FancyHeading from './utils/FancyHeading';
 
 function Homepage() {
   return (
-    <div className='flex flex-col flex-wrap h-full w-[70%] pb-5 items-center justify-start text-white
+    <div className='flex flex-col flex-wrap h-full w-[80%] md:w-[70%] pb-5 items-center justify-start text-white
       bg-middle-background'>
-      <div className='mt-10 mb-5'>
-        <H2Heading enemyAttack = 'Good luck and have fun.'/>
-      </div>
-      <ImageWithModal src={FubukiClap} alt='gif of Fubuki Clapping' />
+        <FancyHeading text='Hello'/>
+        <H2Heading enemyAttack = 'Good luck and have fun.' center='true'/>
+      <img src={FubukiClap} alt='gif of Fubuki Clapping' className='h-[317px] w-[269] md:h-[634px] md:w-[538px]'/>
     </div>
   )
 }

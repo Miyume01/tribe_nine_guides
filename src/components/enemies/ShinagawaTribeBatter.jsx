@@ -28,7 +28,8 @@ function ShinagawaTribeBatter() {
   const TensionAtks = [
           {
             enemyAtk: 'Triple Swing',
-            tensionEx: false,
+            tensionEx: true,
+            center: true,
             imgSrc: BatterEX,
             imgAlt: 'Batter EX',
             description: []

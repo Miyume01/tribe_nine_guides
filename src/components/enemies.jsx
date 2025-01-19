@@ -8,11 +8,9 @@ function Enemies() {
   const location = useLocation();
   const isBasePath = location.pathname === '/enemies';
   return (
-    <div className='flex flex-col flex-wrap h-full w-[70%] items-center justify-start text-white
+    <div className='flex flex-col flex-wrap h-full w-[80%] md:w-[70%] items-center justify-start text-white
         bg-middle-background'>
       { isBasePath && (<>
-        <div className='mt-10'></div>
-
         <DescriptionBlock descriptionParts={[
           {text: 'Attacks listed under ', normalText: true, semiBoldText: true},
           {text: '“tension EX” ', tensionText: true, semiBoldText: true},
@@ -21,7 +19,7 @@ function Enemies() {
           {text: 'mode, exceptions will be noted.', normalText: true, semiBoldText: true},
         ]} />
 
-        <div className='grid md:grid-cols-4 grid-cols-2'>
+        <div className='grid md:grid-cols-4 sm:grid-cols-2 grid-cols-1'>
           {enemiesURL.map((enemy) => {
             return(
               <Card key={enemy.name} title={enemy.name} image={enemy.image} url={enemy.url} id={enemy.id}/>

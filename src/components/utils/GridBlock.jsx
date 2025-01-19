@@ -6,13 +6,14 @@ import ImageWithModal from './ImageWithModal';
 // add a default not found image
 
 function GridBlock({enemyAtk = 'undefined',
-                    tensionEX = false,
+                    tensionEx = false,
                     imgSrc = doro,
                     imgAlt = 'Image not found',
+                    center = false,
                     description = []}) {
   return (
-    <div className='flex flex-col items-center gap-4'>
-        <H2Heading enemyAttack={enemyAtk} tensionEx={tensionEX}/>
+    <div className='flex flex-col items-center gap-4 justify-start'>
+        <H2Heading enemyAttack={enemyAtk} tensionEx={tensionEx} center={center}/>
         <ImageWithModal src={imgSrc} alt={imgAlt} />
         <DescriptionBlock descriptionParts={description}/>
     </div>

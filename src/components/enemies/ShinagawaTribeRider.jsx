@@ -1,7 +1,6 @@
 import React from 'react';
 import Grid from '../utils/Grid';
 import H1Heading from '../utils/H1Heading';
-import H2Heading from '../utils/H2Heading';
 import HorizontalLine from '../utils/HorizontalLine';
 import RiderCharge from './enemies_gifs/Rider_charge_NORMAL.gif';
 import RiderFart from './enemies_gifs/Rider_fart_NORMAL.gif';
@@ -27,7 +26,8 @@ function ShinagawaTribeRider() {
   const TensionAtks = [
           {
             enemyAtk: 'Jump',
-            tensionEx: false,
+            tensionEx: true,
+            center: true,
             imgSrc: RiderJumpEX,
             imgAlt: 'Rider Jump EX',
             description: []
@@ -40,9 +40,6 @@ function ShinagawaTribeRider() {
         <HorizontalLine />
 
         <Grid gridBlocks={NonTensionAtks} />
-
-        <HorizontalLine />
-        <H2Heading enemyAttack='Tension Ex:' tensionEx='true' />
 
         <Grid gridBlocks={TensionAtks} />
     </div>

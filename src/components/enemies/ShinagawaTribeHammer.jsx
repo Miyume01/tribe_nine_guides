@@ -1,7 +1,6 @@
 import React from 'react';
 import Grid from '../utils/Grid';
 import H1Heading from '../utils/H1Heading';
-import H2Heading from '../utils/H2Heading';
 import HorizontalLine from '../utils/HorizontalLine';
 import HammerSlam from './enemies_gifs/Hammer_slam_NORMAL.gif';
 import HammerTripleEX from './enemies_gifs/Hammer_triple_EX.gif';
@@ -16,13 +15,11 @@ function ShinagawaTribeHammer() {
             imgAlt: 'Hammer Slam',
             description: []
           },
-        ];
-  const TensionAtks = [
           {
             enemyAtk: 'Triple Spin',
-            tensionEx: false,
+            tensionEx: true,
             imgSrc: HammerTripleEX,
-            imgAlt: 'BHammer Triple EX',
+            imgAlt: 'Hammer Triple EX',
             description: []
           },
         ];
@@ -35,9 +32,6 @@ function ShinagawaTribeHammer() {
       <Grid gridBlocks={NonTensionAtks} />
 
       <HorizontalLine />
-      <H2Heading enemyAttack='Tension Ex:' tensionEx='true' />
-      
-      <Grid gridBlocks={TensionAtks} />
     </div>
   )
 }

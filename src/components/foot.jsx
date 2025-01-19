@@ -7,14 +7,15 @@ function Foot(){
 
     return(
     <div className="">
-        <footer className="footer relative text-center mt-6 pb-10 bottom-0 w-full
-                        flex flex-col justify-start items-start ml-20 font-serif">
-            <div className="pb-4 flex flex-col md:flex-row flex-wrap">
-                <p className="py-1 text-gray-400">
+        <footer className="relative text-center my-6 px-2 bottom-0 max-w-full
+                        flex flex-col justify-start items-start mx-10 font-roboto
+                        md:mx-30 lg:mx-52 text-sm md:text-lg">
+            <div className="pb-4 flex flex-col md:flex-row flex-wrap items-start justify-start">
+                <p className="py-1 text-gray-400 text-start">
                                 This is an unofficial database website for Tribe Nine players.
                                 Game contents are trademarks and copyrights of Akatsuki Games Inc.
                 </p>
-                <p className="py-1 text-gray-400">
+                <p className="py-1 text-gray-400 text-start">
                                 You may not use our content in a way that suggests any affiliation
                                 with or endorsement by Akatsuki Games Inc. or the Tribe Nine franchise.
                 </p>

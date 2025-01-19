@@ -21,7 +21,7 @@ function Scheeze() {
           imgSrc: ScheezeBump,
           imgAlt: 'Scheeze Bump',
           description: [
-            {text: 'Attacks in tension EX do not change', tensionText: true, underlineText: true},
+            {text: 'Attacks in tension EX do not change', redText: true, underlineText: true, italicText: true},
           ]
         },
       ];
