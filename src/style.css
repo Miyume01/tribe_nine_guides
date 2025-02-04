@@ -32,13 +32,13 @@ body {
 }
 
 .hologram-container img {
-  width: 600px;
-  height: 300px;
+  width: 500px;
+  height: auto;
 }
 
 .hologram-container #modal-size{
   width: 900px;
-  height: 500px;
+  height: auto;
 }
 
 @media (max-width: 768px) {
@@ -107,4 +107,10 @@ body {
 .card-img{
   width: auto;
   height: 200px;
+}
+
+@media(min-width: 760px){
+  .description-image{
+    width: attr(data-desktop-width);
+  }
 }

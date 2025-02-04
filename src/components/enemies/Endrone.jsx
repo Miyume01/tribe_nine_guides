@@ -2,7 +2,6 @@ import React from 'react';
 import Grid from '../utils/Grid';
 import H1Heading from '../utils/H1Heading';
 import HorizontalLine from '../utils/HorizontalLine';
-import TensionHeading from '../utils/TensionHeading';
 import EndroneDoubleCombo from './enemies_gifs/Endrone_double_combo_NORMAL.gif';
 import EndroneRockets from './enemies_gifs/Endrone_rockets.gif';
 import EndroneTripleCombo from './enemies_gifs/Endrone_Triple_Combo.gif';
@@ -19,13 +18,6 @@ function Endrone() {
         description: []
       },
       {
-        enemyAtk: 'Triple Combo',
-        tensionEx: false,
-        imgSrc: EndroneTripleCombo,
-        imgAlt: 'Endrone Triple Combo',
-        description: []
-      },
-      {
         enemyAtk: '½ + Ground Slam',
         tensionEx: false,
         imgSrc: EndroneTripleNormal,
@@ -34,6 +26,13 @@ function Endrone() {
           {text: "Sometimes Endrone might do the ground slam twice. It may be due to deflecting his double attack earlier in the fight(?). The attack can be identified by Endrone skipping the second swing. ", normalText: true},
           {text: "Swing > (skip) > ground > slam > ground > slam", boldText: true, blueText: true},
         ]
+      },
+      {
+        enemyAtk: 'Triple Combo',
+        tensionEx: false,
+        imgSrc: EndroneTripleCombo,
+        imgAlt: 'Endrone Triple Combo',
+        description: []
       },
       {
         enemyAtk: 'Rockets',
@@ -49,7 +48,8 @@ function Endrone() {
     const TensionAtks = [
           {
             enemyAtk: 'Blade Spin + Rockets + Ground Slam',
-            tensionEx: false,
+            tensionEx: true,
+            center: true,
             imgSrc: EndroneTripleEX,
             imgAlt: 'Endrone Triple EX',
             description: []
@@ -62,9 +62,6 @@ function Endrone() {
         <HorizontalLine />
 
         <Grid gridBlocks={NonTensionAtks} />
-
-        <HorizontalLine />
-        <TensionHeading />
 
         <Grid gridBlocks={TensionAtks} />
 

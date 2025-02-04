@@ -1,6 +1,7 @@
 import React from 'react';
 import FlexImg from './FlexImg';
 import H2Heading from './H2Heading';
+import HorizontalLine from './HorizontalLine';
 
 function FlexCol({enemyAtk = 'undefined',
                     tensionEx = false,
@@ -11,6 +12,7 @@ function FlexCol({enemyAtk = 'undefined',
     return (
         <div className='flex flex-col items-center justify-center gap-4'>
             <H2Heading enemyAttack={enemyAtk} tensionEx={tensionEx} center={center}/>
+            <HorizontalLine />
             <FlexImg imgData={imgData} />
         </div>
     )

@@ -1,6 +1,6 @@
 import React from 'react'
 
-function H2Heading({enemyAttack = 'Undefined', tensionEx = false, center = false}) {
+function H2Heading({enemyAttack = 'Undefined', tensionEx = false, center = false, underlineText = false}) {
     return (
         <h1
             className={`font-orbitron text-lg md:text-xl
@@ -9,9 +9,9 @@ function H2Heading({enemyAttack = 'Undefined', tensionEx = false, center = false
         >
             <div className={`flex flex-col ${center ? 'items-center' : 'items-start'} py-2`}>
                 <span className={`${tensionEx ? 'text-ex-mode' : 'invisible'} text-center`}>
-                    Tension EX
+                    Tension EX:
                 </span>
-                <span className='text-center'>{enemyAttack === '' ? '' : enemyAttack}</span>
+                <span className={`text-center`}>{enemyAttack === '' ? '' : enemyAttack}</span>
             </div>
         </h1>
     )

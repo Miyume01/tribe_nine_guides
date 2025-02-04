@@ -1,0 +1,1 @@
+Write the following command into terminal to convert code into website: npx vite

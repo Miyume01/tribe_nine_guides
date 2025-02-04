@@ -28,12 +28,12 @@ function Navbar({ navTabs }){
     };
 
     return(
-        <div className='relative w-full font-tiny5 text-lg md:text-xl'>
+        <div className='relative w-full font-tiny5 text-md md:text-lg'>
             <button className={`text-white text-lg md:text-2xl md:hidden focus:outline-none relative h-full`} onClick={toggleMenu}>
                 <FontAwesomeIcon icon={isOpen ? faTimes : faBars} />
             </button>
-            <div className="hidden md:flex flex-row items-center justify-end px-10 text-sm
-                    md:text-md mr-2 flex-wrap relative z-20 text-purple-400 font-semibold">
+            <div className="hidden md:flex flex-row items-center justify-end px-10 mr-2 flex-wrap
+                    relative z-20 text-purple-400 font-semibold">
                 {navTabs.map((tab) => (
                     <Link
                         key={tab.name}

@@ -1,10 +1,10 @@
 import React from 'react';
 import Grid from '../utils/Grid';
 import H1Heading from '../utils/H1Heading';
-import H2Heading from '../utils/H2Heading';
 import HorizontalLine from '../utils/HorizontalLine';
 import MameezeJump from './enemies_gifs/Mameeze_jump_NORMAL.gif';
 import MameezeSpin from './enemies_gifs/Mameeze_spin.gif';
+import MameezeSpinParry from './enemies_gifs/Mameeze_spin_parry_NORMAL2.gif';
 import MameezeTripleJumpEX from './enemies_gifs/Mameeze_Triple_Jump.gif';
 import MameezeZyzz from './enemies_gifs/Mameeze_Zyzz.png';
 
@@ -34,12 +34,19 @@ function Mameeze() {
           {text: 'If this attack is deflected, all consecutive spin attacks will be followed by a jump.', normalText: true, underlineText: true},
         ]
       },
+      {
+        enemyAtk: '',
+        tensionEx: false,
+        imgSrc: MameezeSpinParry,
+        imgAlt: 'Mameeze Spin Parry',
+      },
     ];
 
     const TensionAtks = [
         {
           enemyAtk: 'Triple Jump',
-          tensionEx: false,
+          tensionEx: true,
+          center: true,
           imgSrc: MameezeTripleJumpEX,
           imgAlt: 'Mameeze Triple Jump EX',
           description: [
@@ -54,9 +61,6 @@ function Mameeze() {
         <HorizontalLine />
         
         <Grid gridBlocks={NonTensionAtks}/>
-
-        <HorizontalLine />
-        <H2Heading enemyAttack='Tension Ex:' tensionEx='true'/>
 
         <Grid gridBlocks={TensionAtks} />
     </div>

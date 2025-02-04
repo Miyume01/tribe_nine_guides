@@ -16,11 +16,14 @@ const hologramData = [
             {
                 src: tigerHologram,
                 alt: 'Tiger',
+                allowModal:false,
             },
             {
                 src: tigerHologramSpot,
                 alt: 'Tiger Spot',
+                allowModal:true,
             },
+            
         ],
     },
     {
@@ -29,10 +32,12 @@ const hologramData = [
             {
                 src: wolfHologram,
                 alt: 'Wolf',
+                allowModal:false,
             },
             {
                 src: wolfHologramSpot,
                 alt: 'Wolf Spot',
+                allowModal:true,
             },
         ],
     },
@@ -42,10 +47,12 @@ const hologramData = [
             {
                 src: whaleHologram,
                 alt: 'Whale',
+                allowModal:false,
             },
             {
                 src: whaleHologramSpot,
                 alt: 'Whale Spot',
+                allowModal:true,
             },
         ],
     },
@@ -55,10 +62,12 @@ const hologramData = [
             {
                 src: butterflyHologram,
                 alt: 'Butterfly',
+                allowModal:false,
             },
             {
                 src: butterflyHologramSpot,
                 alt: 'Butterfly Spot',
+                allowModal:true,
             },
         ],
     },
@@ -68,10 +77,12 @@ const hologramData = [
             {
                 src: butterflyHologram2,
                 alt: 'Butterfly 2',
+                allowModal:false,
             },
             {
                 src: butterflyHologram2Spot,
                 alt: 'Butterfly 2 Spot',
+                allowModal:true,
             },
         ],
     },

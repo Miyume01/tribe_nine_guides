@@ -1,7 +1,6 @@
 import React from 'react';
 import Grid from '../utils/Grid';
 import H1Heading from '../utils/H1Heading';
-import H2Heading from '../utils/H2Heading';
 import HorizontalLine from '../utils/HorizontalLine';
 import MinionDoubleAndJumpEX from './enemies_gifs/Minion_double_and_jump_EX.gif';
 import MinionDoubleSwing from './enemies_gifs/Minion_double_NORMAL.gif';
@@ -13,6 +12,7 @@ function MinionInWhiteDoubleSpeed() {
           {
             enemyAtk: 'Double Swing',
             tensionEx: false,
+            center:true,
             imgSrc: MinionDoubleSwing,
             imgAlt: 'Minion Double Swing',
             description: []
@@ -21,7 +21,7 @@ function MinionInWhiteDoubleSpeed() {
   const TensionAtks = [
           {
             enemyAtk: 'Standalone Jump',
-            tensionEx: false,
+            tensionEx: true,
             imgSrc: MinionStandaloneJumpEX,
             imgAlt: 'Minion Standalone Jump EX',
             description: []
@@ -41,9 +41,7 @@ function MinionInWhiteDoubleSpeed() {
         <HorizontalLine />
 
         <Grid gridBlocks={NonTensionAtks} />
-
-        <HorizontalLine />
-        <H2Heading enemyAttack='Tension Ex:' tensionEx='true' />
+        
         <Grid gridBlocks={TensionAtks} />
 
     </div>

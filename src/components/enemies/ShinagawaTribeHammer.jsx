@@ -30,8 +30,6 @@ function ShinagawaTribeHammer() {
       <HorizontalLine />
 
       <Grid gridBlocks={NonTensionAtks} />
-
-      <HorizontalLine />
     </div>
   )
 }

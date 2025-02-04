@@ -1,7 +1,6 @@
 import React from 'react';
 import Grid from '../utils/Grid';
 import H1Heading from '../utils/H1Heading';
-import H2Heading from '../utils/H2Heading';
 import HorizontalLine from '../utils/HorizontalLine';
 import ShielderBatSwing from './enemies_gifs/Shielder_bat_swing.gif';
 import ShielderDoubleBashEX from './enemies_gifs/Shielder_double_bash_EX.gif';
@@ -28,7 +27,8 @@ function MinionInWhiteDefender() {
     const TensionAtks = [
             {
               enemyAtk: 'Double Shield Bash',
-              tensionEx: false,
+              tensionEx: true,
+              center: true,
               imgSrc: ShielderDoubleBashEX,
               imgAlt: 'Shielder Double Bash EX',
               description: []
@@ -41,9 +41,6 @@ function MinionInWhiteDefender() {
         <HorizontalLine />
 
         <Grid gridBlocks={NonTensionAtks} />
-
-        <HorizontalLine />
-        <H2Heading enemyAttack='Tension Ex:' tensionEx='true' />
 
         <Grid gridBlocks={TensionAtks} />
     </div>

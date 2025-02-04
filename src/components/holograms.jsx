@@ -27,7 +27,6 @@ function Holograms() {
                         imgData={hologram.imgData}
                         center='true'
                     />
-                    <HorizontalLine />
                 </div>
             ))}
                 

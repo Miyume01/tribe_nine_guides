@@ -1,7 +1,6 @@
 import React from 'react';
 import Grid from '../utils/Grid';
 import H1Heading from '../utils/H1Heading';
-import H2Heading from '../utils/H2Heading';
 import HorizontalLine from '../utils/HorizontalLine';
 import BatterBatSwing from './enemies_gifs/Batter_bat_swing_NORMAL.gif';
 import BatterEX from './enemies_gifs/Batter_EX.gif';
@@ -42,9 +41,6 @@ function ShinagawaTribeBatter() {
         <HorizontalLine />
 
         <Grid gridBlocks={NonTensionAtks} />
-
-        <HorizontalLine />
-        <H2Heading enemyAttack='Tension Ex:' tensionEx='true' />
 
         <Grid gridBlocks={TensionAtks} />
 

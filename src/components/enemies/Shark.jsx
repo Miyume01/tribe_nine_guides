@@ -8,6 +8,7 @@ import SharkDiveInOutParry from './enemies_gifs/Shark_dive_in-out_parry.gif';
 import SharkDiveInOut from './enemies_gifs/Shark_dive_in_out2.gif';
 import SharkFinAttack from './enemies_gifs/Shark_fin_attack.gif';
 import SharkWaterLaser from './enemies_gifs/Shark_laser.gif';
+import SharkP3 from './enemies_gifs/Shark_P3.png';
 import SharkTailSwipe from './enemies_gifs/Shark_tail_swipe_NORMAL.gif';
 import SharkTornadoBombs from './enemies_gifs/Shark_Tornado_Bombs.gif';
 import SharkTornadoBombsExplode from './enemies_gifs/Shark_Tornado_Bombs_explode.gif';
@@ -110,7 +111,9 @@ function Shark() {
           {text: 'This entire sequence lasts for the ~¾ths of the ', normalText: true},
           {text: 'EX ', tensionText: true, tenstionText: true},
           {text: "mode's duration. ", normalText: true},
-          {text: "At 3 health bars, the Whirlpool becomes a Water tornado. The water circles' speed is greatly accelerated. At the end of the sequence the boss will perform a Dive attack on the operating character.", normalText: true},
+          {text: "At 3 health bars ", normalText: true},
+          {src: SharkP3, alt: 'Shark Phase 3', isImage: true, wMobile: '80px', hMobile: 'auto', wDesktop: '100px', hDesktop: 'auto'},
+          {text: " the Whirlpool becomes a Water tornado. The water circles' speed is greatly accelerated. At the end of the sequence the boss will perform a Dive attack on the operating character.", normalText: true},
         ]
       },
     ];
@@ -150,7 +153,7 @@ function Shark() {
         </div> */}
 
         <HorizontalLine />
-        <H2Heading enemyAttack='Tension Ex:' tensionEx='true'/>
+        <H2Heading enemyAttack='' tensionEx='true'/>
         
         <Grid gridBlocks={TensionAtks}/>
     </div>

@@ -2,7 +2,7 @@ import { faTimes } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React, { useState } from "react";
 
-const ImageWithModal = ({ src, alt }) => {
+const ImageWithModal = ({ src, alt, allowModal = true }) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [isAnimating, setIsAnimating] = useState(false);
 
@@ -21,11 +21,11 @@ const ImageWithModal = ({ src, alt }) => {
       <img
         src={src}
         alt={alt || "Image"}
-        className="cursor-pointer md:w-[440px] md:h-[400px] w-[220px] h-[200px]"
+        className={`${allowModal ? 'cursor-pointer' : 'cursor-default'} md:w-[440px] md:h-[400px] w-[220px] h-[200px]`}
         onClick={openModal}
       />
 
-      {isModalOpen && (
+      {allowModal && isModalOpen && (
         <div
           className={`fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center z-50
             ${isAnimating ? 'opacity-100' : 'opacity-0'}
