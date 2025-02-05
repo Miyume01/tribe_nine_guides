@@ -18,6 +18,7 @@ const getColorValue = (color) => {
     'gray-500': '128, 128, 128',
     'red-500': '255, 0, 0',
     'blue-500': '0, 0, 255',
+    'blue' : '0, 190, 197',
   };
   return colors[color] || '255, 255, 255'; // default: white
 };

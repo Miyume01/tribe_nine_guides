@@ -29,6 +29,9 @@ export default {
         'page-background': '#131431',
         'middle-background': 'rgba(0, 0, 0, 0.2)',
       },
+      backgroundImage: {
+        'gradient-left-right': 'linear-gradient(to left,#FF0BAC, #00BEC5)',
+      }
     },
   },
   plugins: [],

@@ -29,15 +29,15 @@ function Navbar({ navTabs }){
 
     return(
         <div className='relative w-full font-tiny5 text-md md:text-lg'>
-            <button className={`text-white text-lg md:text-2xl md:hidden focus:outline-none relative h-full`} onClick={toggleMenu}>
+            <button className={`text-white text-lg lg:text-2xl lg:hidden focus:outline-none relative h-full`} onClick={toggleMenu}>
                 <FontAwesomeIcon icon={isOpen ? faTimes : faBars} />
             </button>
-            <div className="hidden md:flex flex-row items-center justify-end px-10 mr-2 flex-wrap
+            <div className="hidden lg:flex flex-row items-center justify-end px-2 mr-2 flex-wrap
                     relative z-20 text-purple-400 font-semibold">
                 {navTabs.map((tab) => (
                     <Link
                         key={tab.name}
-                        className={`text-center w-36 px-2 py-5 flex-shrink ${
+                        className={`text-center lg:w-36 px-2 py-2 flex-shrink ${
                             isSelected === tab.name ? whenSelected : coolEffects
                         } hover:cursor-pointer`}
                         onClick={() => handleNavigation(tab.url, tab.name)}
@@ -48,7 +48,7 @@ function Navbar({ navTabs }){
                 ))}
             </div>
             <div
-                className={`z-[-1] md:hidden fixed inset-0 bg-black bg-opacity-50 backdrop-blur-sm h-screen w-screen flex
+                className={`z-[-1] lg:hidden fixed inset-0 bg-black bg-opacity-50 backdrop-blur-sm h-screen w-screen flex
                         transition-all duration-200 ease-in-out ${isOpen ? 'translate-x-0' : '-translate-x-full'} rounded-lg`}
                 onClick={toggleMenu}
                 style={{
@@ -56,7 +56,7 @@ function Navbar({ navTabs }){
                     }}
                 >
                 <div
-                    className='md:hidden flex flex-col items-start bg-black text-purple-400 w-1/3 pl-7 pr-5 pt-16 pb-3
+                    className='lg:hidden flex flex-col items-start bg-black text-purple-400 w-1/3 pl-7 pr-5 pt-16 pb-3
                         space-y-2 h-full rounded-lg font-semibold z-10 justify-start'
                     onClick={(e) => e.stopPropagation()}
                 >

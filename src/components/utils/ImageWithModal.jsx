@@ -21,7 +21,7 @@ const ImageWithModal = ({ src, alt, allowModal = true }) => {
       <img
         src={src}
         alt={alt || "Image"}
-        className={`${allowModal ? 'cursor-pointer' : 'cursor-default'} md:w-[440px] md:h-[400px] w-[220px] h-[200px]`}
+        className={`${allowModal ? 'cursor-pointer' : 'cursor-default'} md:w-[440px] md:h-[400px]`}
         onClick={openModal}
       />
 

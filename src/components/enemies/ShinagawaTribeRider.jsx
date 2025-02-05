@@ -30,7 +30,13 @@ function ShinagawaTribeRider() {
             center: true,
             imgSrc: RiderJumpEX,
             imgAlt: 'Rider Jump EX',
-            description: []
+            description: [
+              {text:"Will only use the ", underlineText: true,},
+              {text:"Gas ", underlineText: true, boldText: true,},
+              {text:"and ", underlineText: true,},
+              {text:"Jump ", underlineText: true, tensionText: true, boldText: true,},
+              {text:"attacks. Does not use the Charge attack.", underlineText: true,}
+            ]
           },
         ];
 

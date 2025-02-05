@@ -20,15 +20,35 @@ html {
     }
 
 body {
-  
-    background: #131431 ;
+    background: 
+        url('./components/bgLeft.png') no-repeat 160% 50% / 118%,
+        url('./components/bgRight.png') no-repeat 200% 20% / 90%;
+    background-color: #131431;
     z-index: -10;
     overflow-y: auto;
     display: flex;
     align-items: center;
     justify-content: center;
     margin: 0;
-    
+}
+
+body::after {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(19, 20, 49, 0.5);
+  pointer-events: none;
+  z-index: -10;
+}
+
+.round-tl-br {
+  border-top-left-radius: 10%;
+  border-bottom-right-radius: 10%;
+  border-top-right-radius: 0;
+  border-bottom-left-radius: 0;
 }
 
 .hologram-container img {

@@ -31,7 +31,13 @@ function ShinagawaTribeBatter() {
             center: true,
             imgSrc: BatterEX,
             imgAlt: 'Batter EX',
-            description: []
+            description: [
+              {text: 'Will only do ', normalText: true, underlineText: true},
+              {text: 'this ', boldText: true, underlineText: true},
+              {text: 'attack in ', normalText: true, underlineText: true},
+              {text: 'EX ', tensionText: true, semiBoldText: true, underlineText: true},
+              {text: 'mode.', normalText: true, semiBoldText: true, underlineText: true},
+            ]
           },
         ];
 

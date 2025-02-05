@@ -16,7 +16,7 @@ import NormalTable from './utils/NormalTable';
 function CompMonsters() {
   return (
     <div className='flex flex-col flex-wrap h-full w-[80%] md:w-[70%] pb-5 items-center justify-start text-white
-      bg-middle-background'>
+      bg-black bg-opacity-50 round-tl-br'>
         <H1Heading enemyName='Compatible Monsters' />
 
       <DescriptionBlock descriptionParts={[

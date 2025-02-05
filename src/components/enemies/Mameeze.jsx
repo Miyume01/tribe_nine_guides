@@ -31,7 +31,7 @@ function Mameeze() {
         imgSrc: MameezeSpin,
         imgAlt: 'Mameeze Spin',
         description: [
-          {text: 'If this attack is deflected, all consecutive spin attacks will be followed by a jump.', normalText: true, underlineText: true},
+          {text: 'If the spin is deflected, all consecutive spin attacks will be followed by a jump.', boldText: true, underlineText: true},
         ]
       },
       {

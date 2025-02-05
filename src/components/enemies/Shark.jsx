@@ -1,7 +1,6 @@
 import React from 'react';
 import Grid from '../utils/Grid';
 import H1Heading from '../utils/H1Heading';
-import H2Heading from '../utils/H2Heading';
 import HorizontalLine from '../utils/HorizontalLine';
 import SharkWhirlpool from './enemies_gifs/Shark+whirlpool.gif';
 import SharkDiveInOutParry from './enemies_gifs/Shark_dive_in-out_parry.gif';
@@ -47,7 +46,7 @@ function Shark() {
         imgSrc: SharkFinAttack,
         imgAlt: 'Shark Fin Attack',
         description: [
-          {text: 'It is possible to get hit by the water circles.', normalText: true}
+          {text: 'It is possible to get hit by the water circles.', normalText: true, underlineText: true},
         ]
       },
       {
@@ -69,12 +68,14 @@ function Shark() {
         ]
       },
       {
-        enemyAtk: 'Double Dive',
+        enemyAtk: 'Dive',
         tensionEx: false,
         imgSrc: SharkDiveInOut,
         imgAlt: 'Shark Dive In and Out',
         description: [
-          {text: 'A new attack that gets added at 3 health bars. Signified by the music going silent and non-controlled teammates stopping moving.', normalText: true}
+          {text: 'A new attack that gets added at 3 health bars.', normalText: true},
+          {src: SharkP3, alt: 'Shark Phase 3', isImage: true, wMobile: '80px', hMobile: 'auto', wDesktop: '100px', hDesktop: 'auto'},
+          {text: 'Signified by the music going silent and non-controlled teammates stopping moving.'}
         ]
       },
       {
@@ -90,7 +91,7 @@ function Shark() {
   const TensionAtks = [
       {
         enemyAtk: 'Whirlpool',
-        tensionEx: false,
+        tensionEx: true,
         imgSrc: SharkWhirlpool,
         imgAlt: 'Shark Whirlpool',
         description: [
@@ -99,7 +100,8 @@ function Shark() {
           {text: 'mode starts. ', normalText: true, underlineText: true},
           {text: 'The water circles last for the entirety of the ', normalText: true},
           {text: 'EX ', tensionText: true, tenstionText: true},
-          {text: "mode's duration.", normalText: true},
+          {text: "mode's duration. ", normalText: true},
+          {text: 'If the player stands inside the whirlpool, there’s a small chance to get damaged & get knocked down.', normalText: true},
         ]
       },
       {
@@ -124,36 +126,6 @@ function Shark() {
         <HorizontalLine />
         
         <Grid gridBlocks={NonTensionAtks}/>
-
-        {/* need to manually add the double dive for now because of the image in between */}
-
-        {/* <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mx-2 px-6">
-          <div className='flex flex-col items-center gap-4'>
-            <div className='m-2'><H2Heading enemyAttack='Double Dive'/></div>
-            <ImageWithModal src={SharkDiveInOut} alt='Shark Dive In and Out' />
-            <span>
-              <DescriptionBlock descriptionParts={[
-                {text: 'A new attack that gets added at 3 health bars', normalText: true}
-                ]}
-              />
-              <img src={SharkP3} alt='Shark Phase 3' id='shark-p3' className=''/>
-              <DescriptionBlock descriptionParts={[
-                {text: 'Signified by the music going silent and non-controlled teammates stopping moving.', normalText: true}
-                ]}
-              />
-            </span>
-          </div>
-          <div>
-            <ImageWithModal src={SharkDiveInOutParry} alt='Shark Dive In and Out Parry' />
-            <DescriptionBlock descriptionParts={[
-                {text: 'If the dive out is deflected, the boss doesn’t stagger, so the second attack will still need to be dodged/deflected.', normalText: true}
-                ]}
-              />
-          </div>
-        </div> */}
-
-        <HorizontalLine />
-        <H2Heading enemyAttack='' tensionEx='true'/>
         
         <Grid gridBlocks={TensionAtks}/>
     </div>

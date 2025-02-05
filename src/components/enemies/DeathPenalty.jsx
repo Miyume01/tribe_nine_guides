@@ -2,7 +2,6 @@ import React from 'react';
 import DescriptionBlock from '../utils/DescriptionBlock';
 import Grid from '../utils/Grid';
 import H1Heading from '../utils/H1Heading';
-import H2Heading from '../utils/H2Heading';
 import HorizontalLine from '../utils/HorizontalLine';
 import PenaltyAerialStrikeEX from './enemies_gifs/Penalty_aerial strike_EX_mode_start.gif';
 import PenaltyAerialStrikeTiming from './enemies_gifs/Penalty_aerial_strike_timing_ENOKI.gif';
@@ -52,7 +51,7 @@ function DeathPenalty() {
   const TensionAtks = [
     {
       enemyAtk: 'Aerial Strike',
-      tensionEx: false,
+      tensionEx: true,
       imgSrc: PenaltyAerialStrikeEX,
       imgAlt: 'Aerial Strike',
       description: [
@@ -81,10 +80,10 @@ function DeathPenalty() {
       imgSrc: PenaltyTripleRocketShotCraneSpin,
       imgAlt: 'Triple Rocket Shot + Crane Spin',
       description: [
-        {text: 'Does 3 rocket shots instead of 1 in ', normalText: true},
+        {text: 'Does 3 rocket shots instead of 1 in ', normalText: true, underlineText: true},
         {text: 'EX ', tensionText: true, underlineText: true},
         {text: 'mode.', normalText: true, underlineText: true},
-        {text: 'It’s possible to outrun the shots by sprinting.', normalText: true},
+        {text: ' It’s possible to outrun the shots by sprinting.', normalText: true},
       ]
     },
   ]
@@ -93,18 +92,19 @@ function DeathPenalty() {
     <div className='flex flex-col flex-wrap h-full w-full pb-5 items-center justify-start text-white'>
         <H1Heading enemyName='Death Penalty'/>
         <HorizontalLine />
-        <DescriptionBlock descriptionParts={[
-          {text: 'It is strongly advised to use the', normalText: true, underlineText: true},
-          {text: ' Ace Vision ', blueText: true, underlineText: true, boldText: true},
-          {text: ' tension card for this fight.', normalText: true, underlineText: true},
-        ]}/>
+        <div className='text-center mb-2'>
+          <DescriptionBlock descriptionParts={[
+            {text: 'It is strongly advised to use the', normalText: true, underlineText: true, italicText: true, boldText: true},
+            {text: ' Ace Vision ', blueText: true, underlineText: true, boldText: true, italicText: true},
+            {text: ' tension card for this fight.', normalText: true, underlineText: true, italicText: true, boldText: true},
+              ]}
+            setWidth='100%'/>
+        </div>
 
         <Grid gridBlocks={NonTensionAtks} />
 
-        <HorizontalLine />
-        <H2Heading enemyAttack='Tension EX:' tensionEx='true'/>
-
         <Grid gridBlocks={TensionAtks} />
+        
         <Grid gridBlocks={TensionAtks2} />
     </div>
   )

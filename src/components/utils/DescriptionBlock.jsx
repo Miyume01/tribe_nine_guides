@@ -3,7 +3,7 @@ import React from 'react';
 function DescriptionBlock({descriptionParts = [], setWidth = '440px'}) {
   return (
   <p
-    className='mx-4 p-2 text-sm md:text-lg text-start'
+    className='mx-4 p-2 text-sm md:text-lg lg:text-start md:text-center'
     style={{
       width: setWidth,
     }}
@@ -35,7 +35,7 @@ function DescriptionBlock({descriptionParts = [], setWidth = '440px'}) {
                       ${part.italicText? 'italic' : ''}
                       ${part.semiBoldText? 'font-semibold' : ''}
                       ${part.italicText? 'italic' : ''}
-                    `}
+                      lg:text-start md:text-center`}
         >
           {part.text}
       </span>

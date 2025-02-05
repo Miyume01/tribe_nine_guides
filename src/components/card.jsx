@@ -1,5 +1,6 @@
 import React from "react";
 import { Link, useNavigate } from "react-router-dom";
+import cardCircle from './cards_format/circle.svg';
 
 function Card({ title, image, url, id }) {
     const navigate = useNavigate();
@@ -9,18 +10,23 @@ function Card({ title, image, url, id }) {
     }
 
     return (
-        <Link className="flex flex-col m-4 w-full max-w-[200px] h-auto max-h-[300px] text-white p-1 rounded-lg
-            hover:cursor-pointer hover:shadow-card hover:shadow-gray-500 card overflow-hidden"
+        <Link className="flex flex-col m-4 max-w-[180px] w-auto h-auto max-h-[240px] text-white p-1 rounded-lg
+            hover:cursor-pointer hover:shadow-card hover:shadow-gray-500 card relative"
             onClick={handleCardClick}
             to={url}
             >
             <img
+                src={cardCircle}
+                alt="Background Circle encomprising the enemy card image"
+                className="absolute -top-1 left-0 object-contain w-[100%] max-w-full h-[80%] max-h-full opacity-50"
+            />
+            <img
                 src={image}
-                className="rounded-lg mb-2 w-full p-2 card-img"
+                className="relative rounded-lg mb-2 w-auto max-w-full p-2 card-img h-auto max-h-full"
                 alt={title}
                 id={id}
             />
-            <div className="flex-grow p-2 text-center h-[50%] flex items-center justify-center
+            <div className="flex-grow p-2 text-center h-[30%] flex items-center justify-center
                     overflow-hidden">
                 {title}
             </div>
