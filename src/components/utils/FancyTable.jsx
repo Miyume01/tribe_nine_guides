@@ -33,7 +33,7 @@ function FancyTable({ tableData, gridCols = 3, gridGap = 4, setBgColor = false, 
                             >
                             {row.text}</div>
                         ) : (
-                            <div className=''
+                            <div className='p-2'
                             style={{
                                 color: row.textColor,
                                 fontWeight: row.bold ? 'bold' : 'normal',
