@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!-- Modified for a thicker cross -->
+<svg fill="#00bec5" height="800px" width="800px" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+	 viewBox="0 0 490 490" xml:space="preserve">
+<g stroke="#00bec5" stroke-width="50" fill="none">
+    <line x1="50" y1="50" x2="440" y2="440"/>
+    <line x1="440" y1="50" x2="50" y2="440"/>
+</g>
+</svg>

@@ -5,7 +5,7 @@ import Head from './head';
 
 function Layout() {
     return(
-        <div className="flex flex-col min-h-screen w-full">
+        <div className="flex flex-col min-h-screen w-screen">
             <Head />
             <div className='flex-grow flex flex-col justify-center items-center font-roboto'>
                 <Outlet />

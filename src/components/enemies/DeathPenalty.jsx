@@ -7,9 +7,11 @@ import PenaltyAerialStrikeEX from './enemies_gifs/Penalty_aerial strike_EX_mode_
 import PenaltyAerialStrikeTiming from './enemies_gifs/Penalty_aerial_strike_timing_ENOKI.gif';
 import PenaltyCrane from './enemies_gifs/Penalty_crane_NORMAL.gif';
 import PenaltyLeftRightJump from './enemies_gifs/Penalty_left_right_jump_NORMAL.gif';
-import PenaltyRocketShotCraneSpin from './enemies_gifs/Penalty_Rocket_Shot_Crane_Spin.gif';
+// import PenaltyRocketShotCraneSpin from './enemies_gifs/Penalty_Rocket_Shot_Crane_Spin.gif';
 import PenaltySpin from './enemies_gifs/Penalty_spin_NORMAL.gif';
-import PenaltyTripleRocketShotCraneSpin from './enemies_gifs/Penalty_Triple_Rocket_Shot _Crane_Spin.gif';
+// import PenaltyTripleRocketShotCraneSpin from './enemies_gifs/Penalty_Triple_Rocket_Shot _Crane_Spin.gif';
+import PenaltyTripleRocketShotCraneSpin from './enemies_gifs/EXtriplelaserintocranespin-video.mp4';
+import PenaltyRocketShotCraneSpin from './enemies_gifs/Rocketshotcranespinnormal-video.mp4';
 
 function DeathPenalty() {
 
@@ -42,6 +44,7 @@ function DeathPenalty() {
       tensionEx: false,
       imgSrc: PenaltyRocketShotCraneSpin,
       imgAlt: 'Rocket Shot + Crane Spin',
+      isVideo: true,
       description: [
         {text: 'Signified by the boss sliding backwards. The rocket will have a circle glow. It will glow 2 times, on the 3rd one - dodge.', normalText: true}
       ]
@@ -79,6 +82,7 @@ function DeathPenalty() {
       tensionEx: false,
       imgSrc: PenaltyTripleRocketShotCraneSpin,
       imgAlt: 'Triple Rocket Shot + Crane Spin',
+      isVideo: true,
       description: [
         {text: 'Does 3 rocket shots instead of 1 in ', normalText: true, underlineText: true},
         {text: 'EX ', tensionText: true, underlineText: true},

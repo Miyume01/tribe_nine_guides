@@ -1,9 +1,9 @@
 const navTabs = [
-    { name: 'HomePage', label: 'Homepage', url: '/homepage' },
-    { name: 'Holograms', label: 'Holograms', url: '/holograms' },
-    { name: 'CompatibleMonsters', label: 'Compatible Monsters', url: '/compatible-monsters' },
-    { name: 'RankUpMaterials', label: 'Rank-up Mats', url: '/rank-up-materials' },
-    { name: 'Enemies', label: 'Enemies', url: '/enemies' },
+    { name: 'HomePage', label: 'HOMEPAGE', url: '/homepage' },
+    { name: 'Holograms', label: 'HOLOGRAMS', url: '/holograms' },
+    { name: 'RankUpMaterials', label: 'RANK UP MATERIALS', url: '/rank-up-materials' },
+    { name: 'CompatibleMonsters', label: 'COMPATIBLE MONSTERS', url: '/compatible-monsters' },
+    { name: 'Enemies', label: 'ENEMIES', url: '/enemies' },
 ];
 
 export default navTabs;

@@ -11,7 +11,7 @@ import FancyTable from './utils/FancyTable';
 import H1Heading from './utils/H1Heading';
 import H2Heading from './utils/H2Heading';
 import HorizontalLine from './utils/HorizontalLine';
-import NormalTable from './utils/NormalTable';
+// import NormalTable from './utils/NormalTable';
 
 function CompMonsters() {
   return (
@@ -32,15 +32,15 @@ function CompMonsters() {
           <img src={Healer} alt="Healer" />
       </div>
 
-      <div className='w-full px-2'><H2Heading enemyAttack='Suggested sets for characters:' /></div>
+      <div className='w-full px-2'><H2Heading enemyAttack='Suggested sets for characters:' center='true'/></div>
       <HorizontalLine />
 
     <div className='px-10'>
-      <FancyTable tableData={SuggestedSetForCharacters} gridCols={5}/>
+      <FancyTable tableData={SuggestedSetForCharacters} gridCols={5} gridGap={3} />
     </div>
-    <div className='px-10'>
+    {/* <div className='px-10'>
       <NormalTable tableData={SuggestedSetForCharacters} gridCols={5}/>
-    </div>
+    </div> */}
 
       <HorizontalLine />
         <DescriptionBlock descriptionParts={[

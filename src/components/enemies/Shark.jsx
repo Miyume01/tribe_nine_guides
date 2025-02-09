@@ -6,13 +6,16 @@ import SharkWhirlpool from './enemies_gifs/Shark+whirlpool.gif';
 import SharkDiveInOutParry from './enemies_gifs/Shark_dive_in-out_parry.gif';
 import SharkDiveInOut from './enemies_gifs/Shark_dive_in_out2.gif';
 import SharkFinAttack from './enemies_gifs/Shark_fin_attack.gif';
-import SharkWaterLaser from './enemies_gifs/Shark_laser.gif';
+// import SharkWaterLaser from './enemies_gifs/Shark_laser.gif';
 import SharkP3 from './enemies_gifs/Shark_P3.png';
 import SharkTailSwipe from './enemies_gifs/Shark_tail_swipe_NORMAL.gif';
-import SharkTornadoBombs from './enemies_gifs/Shark_Tornado_Bombs.gif';
+// import SharkTornadoBombs from './enemies_gifs/Shark_Tornado_Bombs.gif';
 import SharkTornadoBombsExplode from './enemies_gifs/Shark_Tornado_Bombs_explode.gif';
 import SharkTripleBite from './enemies_gifs/Shark_triple_bite_NORMAL.gif';
-import SharkWhirlpoolP3 from './enemies_gifs/Shark_whirlpool_p3.gif';
+// import SharkWhirlpoolP3 from './enemies_gifs/Shark_whirlpool_p3.gif';
+import SharkTornadoBombs from './enemies_gifs/TornadoBombsNORMAL-video.mp4';
+import SharkWaterLaser from './enemies_gifs/WaterlaserNORMAL-video.mp4';
+import SharkWhirlpoolP3 from './enemies_gifs/watertornadoEXlight-video.mp4';
 
 function Shark() {
 
@@ -36,6 +39,7 @@ function Shark() {
         tensionEx: false,
         imgSrc: SharkWaterLaser,
         imgAlt: 'Shark Water Laser',
+        isVideo: true,
         description: [
           {text: 'Signified by the boss swimming backwards. The hitbox of the water orb is a bit bigger than it looks.', normalText: true},
         ]
@@ -54,6 +58,7 @@ function Shark() {
         tensionEx: false,
         imgSrc: SharkTornadoBombs,
         imgAlt: 'Shark Tornado Bombs',
+        isVideo: true,
         description: [
           {text: 'The charge can be dodged/deflected. There will be approximately 12 seconds of a damage phase after the S.H.A.R.K eats the bomb.', normalText: true}
         ]
@@ -109,6 +114,7 @@ function Shark() {
         tensionEx: false,
         imgSrc: SharkWhirlpoolP3,
         imgAlt: 'Shark Whirlpool Phase 3',
+        isVideo: true,
         description: [
           {text: 'This entire sequence lasts for the ~¾ths of the ', normalText: true},
           {text: 'EX ', tensionText: true, tenstionText: true},

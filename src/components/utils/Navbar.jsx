@@ -1,16 +1,18 @@
-import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+// import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons';
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React, { useEffect, useState } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
+import faBars from '../bars.svg';
+import faTimes from '../cross.svg';
 
 function Navbar({ navTabs }){
 
     const nagivate = useNavigate();
     const location = useLocation();
     const [isSelected, setIsSelected] = useState(navTabs[0].name);
-    const coolEffects = 'transition duration-300 text-ex-mode hover:text-selected-tab';
-    const coolEffectsMobile = 'transition duration-300 text-ex-mode hover:text-selected-tab';
-    const whenSelected = 'text-selected-tab';
+    const coolEffects = 'transition duration-300 text-logo-blue hover:text-selected-tab';
+    const coolEffectsMobile = 'transition duration-300 text-logo-blue hover:text-selected-tab';
+    const whenSelected = 'text-ex-mode';
     const [isOpen, setIsOpen] = useState(false);
 
     useEffect(() => {
@@ -28,9 +30,10 @@ function Navbar({ navTabs }){
     };
 
     return(
-        <div className='relative w-full font-tiny5 text-md md:text-lg'>
-            <button className={`text-white text-lg lg:text-2xl lg:hidden focus:outline-none relative h-full`} onClick={toggleMenu}>
-                <FontAwesomeIcon icon={isOpen ? faTimes : faBars} />
+        <div className='relative w-full font-tiny5 text-md lg:text-md'>
+            <button className={`lg:hidden focus:outline-none relative flex items-center`} onClick={toggleMenu}>
+                {/* <FontAwesomeIcon icon={isOpen ? faTimes : faBars} /> */}
+                <img src={isOpen ? faTimes : faBars} className="w-6 h-6" alt='Menu Icon'/>
             </button>
             <div className="hidden lg:flex flex-row items-center justify-end px-2 mr-2 flex-wrap
                     relative z-20 text-purple-400 font-semibold">
@@ -43,12 +46,15 @@ function Navbar({ navTabs }){
                         onClick={() => handleNavigation(tab.url, tab.name)}
                         to={tab.url}
                     >
-                        <button>{tab.label}</button>
+                        <div className="flex items-center justify-around">
+                            <div className="bg-ex-mode h-8 w-1 rounded"></div>
+                            <button>{tab.label}</button>
+                        </div>
                     </Link>
                 ))}
             </div>
             <div
-                className={`z-[-1] lg:hidden fixed inset-0 bg-black bg-opacity-50 backdrop-blur-sm h-screen w-screen flex
+                className={`z-[-1] lg:hidden fixed inset-0 bg-black bg-opacity-50 h-screen w-screen flex
                         transition-all duration-200 ease-in-out ${isOpen ? 'translate-x-0' : '-translate-x-full'} rounded-lg`}
                 onClick={toggleMenu}
                 style={{

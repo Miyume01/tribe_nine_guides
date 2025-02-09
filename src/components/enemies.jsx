@@ -8,7 +8,7 @@ function Enemies() {
   const location = useLocation();
   const isBasePath = location.pathname === '/enemies';
   return (
-    <div className='flex flex-col flex-wrap h-full w-[80%] md:w-[52%] items-center justify-start text-white
+    <div className='flex flex-col flex-wrap h-full w-[80%] md:w-[70%] items-center justify-start text-white
         bg-black bg-opacity-50 round-tl-br'>
       { isBasePath && (<>
         <DescriptionBlock descriptionParts={[

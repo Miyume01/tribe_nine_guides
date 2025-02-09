@@ -1,14 +1,15 @@
 import React from 'react';
 
-function HorizontalLine({ color = 'gray-500', height = '2px', opacity = 50, marginTop = 'mt-4', marginBottom = 'md:mb-6', width = '80%' }) {
+function HorizontalLine({ color = 'gray-500', height = '2px', opacity = 50, marginTop = '4', marginBottom = 'md:mb-6', width = '80%' }) {
   return (
     <div
       style={{
         width: width,
         height: height,
         backgroundColor: `rgba(${getColorValue(color)}, ${opacity / 100})`,
+        marginTop: marginTop,
       }}
-      className={`${marginTop} mx-auto ${marginBottom}`}
+      className={`mx-auto ${marginBottom}`}
     />
   );
 }

@@ -11,6 +11,8 @@ function Grid({ gridBlocks = [] }) {
           tensionEx={block.tensionEx}
           imgSrc={block.imgSrc}
           imgAlt={block.imgAlt}
+          isVideo={block.isVideo}
+          allowModal={block.allowModal}
           center={block.center}
           description={block.description}
         />

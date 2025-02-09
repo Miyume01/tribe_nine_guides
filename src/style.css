@@ -21,15 +21,31 @@ html {
 
 body {
     background: 
-        url('./components/bgLeft.png') no-repeat 160% 50% / 118%,
-        url('./components/bgRight.png') no-repeat 200% 20% / 90%;
+        url('./components/bgLeft.png') no-repeat 400% -8% / 106%,
+        url('./components/bgRight.png') no-repeat -680% -8% / 102%;
     background-color: #131431;
     z-index: -10;
     overflow-y: auto;
     display: flex;
+    position: absolute;
     align-items: center;
     justify-content: center;
     margin: 0;
+}
+
+@media (max-width: 480px) {
+  body {
+      background:
+          url('./components/bgRightMobile.png') no-repeat 48% -4% / 180%;
+      background-color: #131431;
+      z-index: -10;
+      overflow-y: auto;
+      display: flex;
+      position: absolute;
+      align-items: center;
+      justify-content: center;
+      margin: 0;
+  }
 }
 
 body::after {
@@ -45,10 +61,15 @@ body::after {
 }
 
 .round-tl-br {
-  border-top-left-radius: 10%;
-  border-bottom-right-radius: 10%;
+  border-top-left-radius: 5rem;
+  border-bottom-right-radius: 5rem;
   border-top-right-radius: 0;
   border-bottom-left-radius: 0;
+}
+
+.round-footer {
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
 }
 
 .hologram-container img {
@@ -125,8 +146,69 @@ body::after {
 }
 
 .card-img{
-  width: auto;
-  height: 200px;
+  width: 12rem;
+  height: auto;
+  flex-shrink: 0;
+}
+
+.card-circle{
+  width: 13rem;
+  height: auto;
+}
+
+#enemy-laser-drone .card-img {
+  height: auto;
+  width: 12.5rem;
+  top: 0.2rem;
+  right: 0.4rem;
+  
+}
+
+#enemy-orb-drone .card-img {
+  height: auto;
+  width: 12.5rem;
+  top: 0.2rem;
+  right: 0.4rem;
+}
+
+#enemy-shinagawa-hammer .card-img {
+  height: 13rem;
+  width: 10.5rem;
+  right: 0.8rem;
+  top: 0rem;
+}
+
+#enemy-shinagawa-rider .card-img {
+  height: auto;
+  width: 10rem;
+}
+
+#enemy-shinagawa-batter .card-img {
+  height: auto;
+  width: 9.5rem;
+  top: 0.2rem;
+  right: 1rem;
+}
+
+#enemy-minion-defender .card-img {
+  height: 11rem;
+  width: 12.2rem;
+}
+
+#enemy-minion-double-speed {
+  overflow: hidden;
+}
+
+#enemy-minion-double-speed .card-img {
+  height: 8rem;
+  width: 15rem;
+  top: 0.5rem;
+  right: 0.5rem;
+
+}
+
+#enemy-shark .card-img{
+  right: 0.6rem;
 }
 
 @media(min-width: 760px){
