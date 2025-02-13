@@ -24,6 +24,7 @@ body {
         url('./components/bgLeft.png') no-repeat 400% -8% / 106%,
         url('./components/bgRight.png') no-repeat -680% -8% / 102%;
     background-color: #131431;
+    background-attachment: fixed;
     z-index: -10;
     overflow-y: auto;
     display: flex;
@@ -215,4 +216,71 @@ body::after {
   .description-image{
     width: attr(data-desktop-width);
   }
+}
+
+/* .table-border-col {
+  background-color: rgba(0, 3, 1, 0.85);
+  box-shadow: 0 0 0 4px #494c4b inset,
+              0 0 0 6px black;
+}
+
+
+.table-border-row {
+  background-color: rgba(0, 3, 1, 0.50);
+  border :8px solid black;
+  overflow: hidden;
+} */
+
+.table-border-col {
+    background-color: rgba(0, 3, 1, 0.85);
+    box-shadow: 0 0 0 4px #494c4b inset;
+    border: 6px solid black;
+    border-collapse: collapse;
+    /* outline: 8px solid black; */
+    /* outline-offset: -2px; */
+  }
+
+.table-border-row {
+    background-color: rgba(0, 3, 1, 0.50);
+    border: 6px solid black;
+    border-collapse: collapse;
+    /* box-shadow: inset 0 0 0 6px transparent; */
+    /* box-shadow: inset 0 0 0 4px black; */
+    /* outline: 4px solid black; */
+    /* outline-offset: -3px; */
+  }
+
+/* .custom-bg {
+  background-color: transparent;
+  transition: background-image 0.3s ease;
+}
+
+.custom-bg:hover {
+  background-image: url('./components/navbarGlow.png');
+  background-position: center;
+  background-size: cover;
+} */
+
+.custom-bg {
+  position: relative;
+  background-color: transparent;
+}
+
+.custom-bg::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('./components/navbarGlow.png');
+  background-position: center;
+  background-size: cover;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: -1;
+}
+
+.custom-bg:hover::before {
+  opacity: 1;
 }

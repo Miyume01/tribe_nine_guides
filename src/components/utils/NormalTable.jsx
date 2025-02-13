@@ -9,9 +9,9 @@ function NormalTable({ gridCols = 3, gridGap = 4, tableData }) {
         style={{
             display: 'grid',
             gridTemplateColumns: `repeat(${gridCols}, 1fr)`,
-            gap: 0,
-            margin: '20px',
-            marginTop: '20px',
+            gap: gapValue,
+            margin: '1.25rem',
+            marginTop: '1.25rem',
             border: '1px solid white',
         }}
         >
@@ -24,7 +24,6 @@ function NormalTable({ gridCols = 3, gridGap = 4, tableData }) {
                         border: '1px solid white',
                         padding: '10px',
                         textAlign: 'center',
-                        backgroundColor: '#282c34',
                         color: row.textColor || 'white',
                         fontWeight: row.bold ? 'bold' : 'normal',
                         textDecoration: row.underline ? 'underline' : 'normal',

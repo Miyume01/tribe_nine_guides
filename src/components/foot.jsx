@@ -8,8 +8,8 @@ function Foot(){
     return(
     <div className="flex justify-center">
         <footer className="relative text-center mt-6 pt-2 px-2 bottom-0 max-w-full mx-10 font-roboto
-                        md:mx-30 lg:mx-52 text-sm md:text-md flex flex-col flex-wrap h-full w-[60%]
-                        md:w-[60%] items-start justify-start text-white bg-black bg-opacity-50
+                        md:mx-30 lg:mx-52 text-sm md:text-md flex flex-col flex-wrap h-full w-[80%]
+                        md:w-[70%] items-start justify-start text-white bg-black bg-opacity-50
                         round-footer">
             <div className="pb-4 flex flex-col md:flex-row flex-wrap items-start justify-start">
                 <p className="py-1 text-gray-400 text-start">

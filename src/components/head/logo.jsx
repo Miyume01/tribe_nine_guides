@@ -11,7 +11,7 @@ function Logo(){
     };
 
     return(
-        <div className="max-w-80 lg:w-80 h-auto flex justify-center items-center lg:justify-start lg:items-center">
+        <div className="max-w-80 lg:w-80 h-full flex justify-center items-center lg:justify-start lg:items-center">
             <img src={Cactus} alt="Q's cactus on left side of website name"
                 className="w-6 lg:w-7 h-auto"/>
             <div onClick={handleLogoClick} className="cursor-pointer font-tiny5 md:text-[1.4rem]
