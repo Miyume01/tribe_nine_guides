@@ -47,12 +47,14 @@ const ImageWithModal = ({ src, alt, allowModal = true, isVideo = false }) => {
             onClick={(e) => e.stopPropagation()}
           >
             <button
-              className="absolute top-4 right-4 text-white p-1 rounded-lg w-8 text-sm h-8"
+              className="absolute top-0 right-0 md:top-3 md:right-3 text-white p-1 rounded-lg text-sm md:text-lg h-6 w-6 md:w-8 md:h-8 flex
+                items-center justify-center bg-gray-600 hover:bg-black"
               onClick={closeModal}
             >
               <FontAwesomeIcon icon={faTimes} />
             </button>
 
+            {/* max-w-full max-h-full object-contain */}
             <img
               src={src}
               alt={alt || "Popup Image"}

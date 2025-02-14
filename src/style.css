@@ -2,10 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  min-width: 350px;
-}
-
+/* General Styling */
 * {
     padding: 0;
     margin: 0;
@@ -19,7 +16,7 @@ html {
     font-style: normal;
     }
 
-body {
+/* body {
     background: 
         url('./components/bgLeft.png') no-repeat 400% -8% / 106%,
         url('./components/bgRight.png') no-repeat -680% -8% / 102%;
@@ -37,8 +34,9 @@ body {
 @media (max-width: 480px) {
   body {
       background:
-          url('./components/bgRightMobile.png') no-repeat 48% -4% / 180%;
-      background-color: #131431;
+          url('./components/bgRightMobile.png') no-repeat 0% 42% / 100%;
+      background-color: black;
+      background-attachment: fixed;
       z-index: -10;
       overflow-y: auto;
       display: flex;
@@ -46,6 +44,102 @@ body {
       align-items: center;
       justify-content: center;
       margin: 0;
+  }
+
+  body::after {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    pointer-events: none;
+    z-index: -10;
+  }
+}
+
+body::after {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(19, 20, 49, 0.5);
+  pointer-events: none;
+  z-index: -10;
+} */
+
+:root {
+  --bgLeft-pos-x: clamp(350%, 400%, 450%);
+  --bgLeft-pos-y: clamp(-2%, -8%, -20%);
+  --bgLeft-size: clamp(100%, 106%, 115%);
+
+  --bgRight-pos-x: clamp(-700%, -680%, -660%);
+  --bgRight-pos-y: clamp(-2%, -8%, -20%);
+  --bgRight-size: clamp(100%, 102%, 110%);
+
+  /* --bgMobile-size: clamp(100%, 107%, 120%);
+  --bgMobile-pos-x: 20%;
+  --bgMobile-pos-y: 58%; */
+
+  min-width: 330px;
+}
+
+@media(max-width: 1280px){
+  :root {
+    --bgLeft-pos-y: clamp(10%, 30%, 50%);
+    --bgRight-pos-y: clamp(10%, 30%, 50%);
+  }
+}
+
+body {
+  background: 
+    url('./components/bgLeft.png') no-repeat var(--bgLeft-pos-x) var(--bgLeft-pos-y) / var(--bgLeft-size),
+    url('./components/bgRight.png') no-repeat var(--bgRight-pos-x) var(--bgRight-pos-y) / var(--bgRight-size);
+  background-color: #131431;
+  background-attachment: fixed;
+  overflow-y: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  position: relative;
+  z-index: -10;
+}
+
+@media (max-width: 480px) {
+  :root {
+    --bgMobile-size: clamp(100%, 107%, 120%);
+    --bgMobile-pos-x: 20%;
+    --bgMobile-pos-y: clamp(38%, 58%, 78%);
+  }
+
+  body {
+    background:
+      url('./components/bgRightMobile.png') no-repeat var(--bgMobile-pos-x) var(--bgMobile-pos-y) / var(--bgMobile-size);
+    background-color: black;
+    background-attachment: fixed;
+    overflow-y: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    position: relative;
+    z-index: -10;
+  }
+
+  body::after {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    pointer-events: none;
+    z-index: -10;
   }
 }
 
@@ -61,6 +155,7 @@ body::after {
   z-index: -10;
 }
 
+
 .round-tl-br {
   border-top-left-radius: 5rem;
   border-bottom-right-radius: 5rem;
@@ -73,6 +168,7 @@ body::after {
   border-top-right-radius: 0.5rem;
 }
 
+/* Hologram Styling */
 .hologram-container img {
   width: 500px;
   height: auto;
@@ -107,45 +203,89 @@ body::after {
   }
 }
 
-#comp-monsters img {
-  width:474px;
-  height: 124px;
-}
-
-#comp-monsters #modal-size {
-  width:474px;
-  height: 124px;
-}
-
-@media (max-width: 768px) {
-  #comp-monsters img {
-    width: 220px;
-    height: 80px;
-  }
-
-  #comp-monsters #modal-size {
-    width: 600px;
-    height: 300px;
-  }
-}
-
-@media (max-width: 480px) {
-  #comp-monsters img {
-    width: 220px;
-    height: 80px;
-  }
-
-  #comp-monsters #modal-size {
-    width: 300px;
-    height: 100px;
-  }
-}
-
 #enigmatic-ball {
   width: 1.4rem;
   height: 1.4rem;
 }
 
+@media (max-width: 768px) {
+  #enigmatic-ball {
+    width: 1.2rem;
+    height: 1.2rem;
+  }
+}
+
+/* Rank-up Materials Styling */
+.rankup-mats-grid {
+  display: grid;
+  gap: var(--gap-value, 1rem);
+  margin: 1.25rem;
+  margin-top: 1.25rem;
+}
+
+.rankup-mats-grid[data-cols="2"] { grid-template-columns: repeat(2, 1fr); }
+.rankup-mats-grid[data-cols="3"] { grid-template-columns: repeat(3, 1fr); }
+.rankup-mats-grid[data-cols="4"] { grid-template-columns: repeat(4, 1fr); }
+
+@media (max-width: 768px) {
+  .rankup-mats-grid{
+    gap:calc(var(--gap-value, 1rem) / 2);
+  }
+}
+
+/* Compatible Monsters Styling */
+#comp-monsters img {
+  width:474px;
+  height: 124px;
+}
+
+@media (max-width: 1280px) {
+  #comp-monsters img {
+    width: 220px;
+    height: 80px;
+  }
+}
+
+@media (max-width: 480px) {
+  #comp-monsters img {
+    width: 140px;
+    height: 60px;
+  }
+}
+
+/* .table-border-col {
+  background-color: rgba(0, 3, 1, 0.85);
+  box-shadow: 0 0 0 4px #494c4b inset,
+              0 0 0 6px black;
+}
+
+
+.table-border-row {
+  background-color: rgba(0, 3, 1, 0.50);
+  border :8px solid black;
+  overflow: hidden;
+} */
+
+.table-border-col {
+  background-color: rgba(0, 3, 1, 0.85);
+  box-shadow: 0 0 0 4px #494c4b inset;
+  border: 6px solid black;
+  border-collapse: collapse;
+  /* outline: 8px solid black; */
+  /* outline-offset: -2px; */
+}
+
+.table-border-row {
+  background-color: rgba(0, 3, 1, 0.50);
+  border: 6px solid black;
+  border-collapse: collapse;
+  /* box-shadow: inset 0 0 0 6px transparent; */
+  /* box-shadow: inset 0 0 0 4px black; */
+  /* outline: 4px solid black; */
+  /* outline-offset: -3px; */
+}
+
+/* Enemies Styling */
 .card-img{
   width: 12rem;
   height: auto;
@@ -218,49 +358,7 @@ body::after {
   }
 }
 
-/* .table-border-col {
-  background-color: rgba(0, 3, 1, 0.85);
-  box-shadow: 0 0 0 4px #494c4b inset,
-              0 0 0 6px black;
-}
-
-
-.table-border-row {
-  background-color: rgba(0, 3, 1, 0.50);
-  border :8px solid black;
-  overflow: hidden;
-} */
-
-.table-border-col {
-    background-color: rgba(0, 3, 1, 0.85);
-    box-shadow: 0 0 0 4px #494c4b inset;
-    border: 6px solid black;
-    border-collapse: collapse;
-    /* outline: 8px solid black; */
-    /* outline-offset: -2px; */
-  }
-
-.table-border-row {
-    background-color: rgba(0, 3, 1, 0.50);
-    border: 6px solid black;
-    border-collapse: collapse;
-    /* box-shadow: inset 0 0 0 6px transparent; */
-    /* box-shadow: inset 0 0 0 4px black; */
-    /* outline: 4px solid black; */
-    /* outline-offset: -3px; */
-  }
-
-/* .custom-bg {
-  background-color: transparent;
-  transition: background-image 0.3s ease;
-}
-
-.custom-bg:hover {
-  background-image: url('./components/navbarGlow.png');
-  background-position: center;
-  background-size: cover;
-} */
-
+/* NavBar Styling */
 .custom-bg {
   position: relative;
   background-color: transparent;

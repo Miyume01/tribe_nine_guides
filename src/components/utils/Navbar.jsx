@@ -33,13 +33,13 @@ function Navbar({ navTabs }){
 
     return(
         <div className='relative w-full font-tiny5 text-[0.8rem] lg:text-lg'>
-            <button className={`lg:hidden focus:outline-none relative flex items-center`} onClick={toggleMenu}>
-                <img src={isOpen ? faTimes : faBars} className="w-8 h-8 mr-5" alt='Menu Icon'/>
+            <button className={`xl:hidden focus:outline-none relative flex items-center`} onClick={toggleMenu}>
+                <img src={isOpen ? faTimes : faBars} className="w-8 h-8" alt='Menu Icon'/>
             </button>
-            <div className="hidden lg:flex flex-row items-center justify-end flex-wrap
+            <div className="hidden xl:flex flex-row items-center justify-end flex-wrap
                     relative z-20 text-purple-400 font-semibold">
                 {navTabs.map((tab) => (
-                    <div className={`relative text-center max-w-64 h-16 flex-shrink
+                    <div key={tab.name} className={`relative text-center max-w-64 h-16 flex-shrink
                         ${isSelected === tab.name ? whenSelected : coolEffects}
                         hover:cursor-pointer flex justify-center items-center min-w-40`}>
                         <div className="bg-ex-mode h-8 w-[2px] mx-1 flex-none"></div>
@@ -60,7 +60,7 @@ function Navbar({ navTabs }){
                 ))}
             </div>
             <div
-                className={`z-[-1] lg:hidden fixed inset-0 bg-black bg-opacity-50 h-full w-full flex
+                className={`z-[-1] xl:hidden fixed inset-0 bg-black bg-opacity-50 h-full w-full flex
                         transition-all duration-200 ease-in-out ${isOpen ? 'translate-x-0' : '-translate-x-full'} rounded-lg`}
                 onClick={toggleMenu}
                 style={{
@@ -68,7 +68,7 @@ function Navbar({ navTabs }){
                     }}
                 >
                 <div
-                    className='lg:hidden flex flex-col items-start bg-black text-purple-400 w-[45%] pl-7 pt-16 pb-3
+                    className='xl:hidden flex flex-col items-start bg-black text-purple-400 w-[45%] pl-4 pt-16 pb-3
                         space-y-2 h-full rounded-lg font-semibold z-10 justify-start'
                     onClick={(e) => e.stopPropagation()}
                 >

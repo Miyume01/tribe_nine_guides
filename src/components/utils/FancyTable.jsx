@@ -4,14 +4,7 @@ function FancyTable({ tableData, gridCols = 3, gridGap = 4, setBgColor = false, 
                     lineWidth='60%', lineWidthHead='100%',}) {
     const gapValue = `${gridGap * 0.25}rem`;
   return (
-    <div
-        style={{
-            display: 'grid',
-            gridTemplateColumns: `repeat(${gridCols}, 1fr)`,
-            gap: gapValue,
-            margin: '1.25rem',
-            marginTop: '1.25rem',
-        }}>
+    <div className='rankup-mats-grid' data-cols={gridCols} >
         {tableData.map((column, columnIndex) => (
             <div
                 key={columnIndex}

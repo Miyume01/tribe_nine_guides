@@ -14,15 +14,18 @@ import HorizontalLine from './utils/HorizontalLine';
 import NormalTable2 from './utils/NormalTable2';
 function CompMonsters() {
   return (
-    <div className='flex flex-col flex-wrap h-full w-[80%] md:w-[70%] pb-5 items-center justify-start text-white
+    <div className='flex flex-col flex-wrap max-h-full w-[80%] md:w-[70%] pb-5 items-center justify-start text-white
       bg-black bg-opacity-50 round-tl-br'>
         <H1Heading enemyName='Compatible Monsters' />
 
-      <DescriptionBlock descriptionParts={[
-        {text: ' Current sets as of Open Beta Test (OBT):', normalText: true, underlineText: true},
-      ]}/>
+      <DescriptionBlock
+        descriptionParts={[
+          {text: ' Current sets as of Open Beta Test (OBT):', normalText: true, underlineText: true}
+          ]}
+        centerText='true'
+        />
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 m-5" id='comp-monsters'>
+      <div className="grid grid-cols-1 md:grid-cols-2 xl:gap-4 md:gap-2 gap-1 m-2 object-contain" id='comp-monsters'>
           <img src={Supporter} alt="Supporter" />
           <img src={Tank} alt="Tank" />
           <img src={Technician} alt="Technician" />
@@ -30,8 +33,8 @@ function CompMonsters() {
           <img src={Attacker} alt="Attacker" />
           <img src={Healer} alt="Healer" />
       </div>
-
-      <div className='w-full px-2'><H2Heading enemyAttack='Suggested sets for characters:' center='true'/></div>
+      
+      <H2Heading enemyAttack='Suggested sets for characters:' center='true'/>
       <HorizontalLine />
 
       {/* <FancyTable2 tableData={SuggestedSetForCharacters} gridCols={5} gridGap={0} /> */}

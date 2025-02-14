@@ -11,11 +11,11 @@ function Logo(){
     };
 
     return(
-        <div className="max-w-80 lg:w-80 h-full flex justify-center items-center lg:justify-start lg:items-center">
+        <div className="max-w-64 lg:w-64 h-full flex justify-center items-center lg:justify-start lg:items-center">
             <img src={Cactus} alt="Q's cactus on left side of website name"
                 className="w-6 lg:w-7 h-auto"/>
             <div onClick={handleLogoClick} className="cursor-pointer font-tiny5 md:text-[1.4rem]
-                font-bold bg-gradient-left-right bg-clip-text text-transparent px-2">
+                font-bold bg-gradient-left-right bg-clip-text text-transparent px-1 ld:px-2">
                 TRASH TRIBE
             </div>
             <img src={Pudding} alt="Tsuki's pudding on right side of website name"

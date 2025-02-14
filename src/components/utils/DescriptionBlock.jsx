@@ -1,12 +1,9 @@
 import React from 'react';
 
-function DescriptionBlock({descriptionParts = [], setWidth = '440px'}) {
+function DescriptionBlock({descriptionParts = [], setWidth = '440px', centerText = false}) {
   return (
   <p
-    className='mx-4 p-2 text-sm md:text-lg lg:text-start md:text-center'
-    style={{
-      width: setWidth,
-    }}
+    className={`md:mx-4 md:p-2 text-sm md:text-lg ${centerText ? 'text-center' : 'lg:text-start md:text-center'}`}
     >
       {descriptionParts.map((part, index) =>
         part.isImage ? (

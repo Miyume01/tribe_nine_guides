@@ -27,7 +27,7 @@ function Scheeze() {
       ];
 
   return (
-    <div className='flex flex-col flex-wrap h-full w-full pb-5 items-center justify-start text-white'>
+    <div className='flex flex-col flex-wrap max-h-full w-full pb-5 items-center justify-start text-white'>
         <H1Heading enemyName='Scheeze' />
         <HorizontalLine />
         

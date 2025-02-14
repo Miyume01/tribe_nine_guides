@@ -7,7 +7,7 @@ function Layout() {
     return(
         <div className="flex flex-col min-h-screen w-screen">
             <Head />
-            <div className='flex-grow flex flex-col justify-center items-center font-roboto'>
+            <div className='flex-grow flex flex-col justify-center items-center font-roboto w-full'>
                 <Outlet />
             </div>
             <Foot />
