@@ -7,7 +7,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    overflow-x: hidden;
+    -webkit-overflow-scrolling: touch;
   }
   
 html {
@@ -16,86 +16,147 @@ html {
     font-style: normal;
     }
 
-/* body {
-    background: 
-        url('./components/bgLeft.png') no-repeat 400% -8% / 106%,
-        url('./components/bgRight.png') no-repeat -680% -8% / 102%;
-    background-color: #131431;
-    background-attachment: fixed;
-    z-index: -10;
-    overflow-y: auto;
-    display: flex;
-    position: absolute;
-    align-items: center;
-    justify-content: center;
-    margin: 0;
+html, body{
+  min-height: 100dvh;
+  min-height: 100vh;
+  overflow-x: hidden;
 }
-
-@media (max-width: 480px) {
-  body {
-      background:
-          url('./components/bgRightMobile.png') no-repeat 0% 42% / 100%;
-      background-color: black;
-      background-attachment: fixed;
-      z-index: -10;
-      overflow-y: auto;
-      display: flex;
-      position: absolute;
-      align-items: center;
-      justify-content: center;
-      margin: 0;
-  }
-
-  body::after {
-    content: '';
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(0, 0, 0, 0.8);
-    pointer-events: none;
-    z-index: -10;
-  }
-}
-
-body::after {
-  content: '';
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgba(19, 20, 49, 0.5);
-  pointer-events: none;
-  z-index: -10;
-} */
 
 :root {
-  --bgLeft-pos-x: clamp(350%, 400%, 450%);
-  --bgLeft-pos-y: clamp(-2%, -8%, -20%);
+  /* --bgLeft-pos-x: clamp(350%, 400%, 450%);
+  --bgLeft-pos-y: clamp(-40%, 10%, 40%);
   --bgLeft-size: clamp(100%, 106%, 115%);
 
-  --bgRight-pos-x: clamp(-700%, -680%, -660%);
-  --bgRight-pos-y: clamp(-2%, -8%, -20%);
-  --bgRight-size: clamp(100%, 102%, 110%);
+  --bgRight-pos-x: clamp(-640%, -620%, -600%);
+  --bgRight-pos-y: clamp(-30%, 10%, 30%);
+  --bgRight-size: clamp(101%, 102%, 104%);
 
-  /* --bgMobile-size: clamp(100%, 107%, 120%);
-  --bgMobile-pos-x: 20%;
-  --bgMobile-pos-y: 58%; */
+  --bgMobile-size: clamp(100%, 105%, 120%);
+  --bgMobile-pos-x: clamp(15%, 20%, 25%);
+  --bgMobile-pos-y: clamp(20%, 60%, 80%); */
 
-  min-width: 330px;
+  min-width: 280px;
 }
 
-@media(max-width: 1280px){
+/* @media (max-width: 1280px) {
   :root {
-    --bgLeft-pos-y: clamp(10%, 30%, 50%);
-    --bgRight-pos-y: clamp(10%, 30%, 50%);
+    --bgLeft-pos-y: clamp(0%, 10%, 12%);
+    --bgRight-pos-y: clamp(0%, 10%, 12%);
+  }
+
+  @supports (-moz-appearance: none) {
+    :root {
+      --bgLeft-pos-y: clamp(20px, 90px, 130px);
+      --bgRight-pos-y: clamp(20px, 90px, 130px);
+    }
+  }
+
+  @supports (-webkit-touch-callout: none) {
+    :root {
+      --bgLeft-pos-y: clamp(10px, 70px, 110px);
+      --bgRight-pos-y: clamp(10px, 70px, 110px);
+    }
+  }
+} */
+
+
+/* @media (max-width: 484px) {
+  :root {
+    --bgMobile-size: clamp(100%, 105%, 120%);
+    --bgMobile-pos-x: clamp(15%, 20%, 25%);
+    --bgMobile-pos-y: clamp(20%, 60%, 80%);
+  }
+
+  @supports (-moz-appearance: none) {
+    :root {
+      --bgMobile-pos-x: clamp(25px, 45px, 75px);
+      --bgMobile-pos-y: clamp(35px, 160px, 200px);
+    }
+  }
+
+  @supports (-webkit-touch-callout: none) {
+    :root {
+      --bgMobile-pos-x: clamp(28px, 48px, 78px);
+      --bgMobile-pos-y: clamp(38px, 170px, 210px);
+    }
+  }
+}
+
+@media (max-width: 400px) {
+  :root {
+    --bgMobile-size: clamp(105%, 115%, 125%);
+    --bgMobile-pos-x: clamp(10%, 15%, 20%);
+    --bgMobile-pos-y: clamp(25%, 40%, 85%);
+  }
+
+  @supports (-moz-appearance: none) {
+    :root {
+      --bgMobile-pos-x: clamp(18px, 30px, 48px);
+      --bgMobile-pos-y: clamp(45px, 130px, 190px);
+    }
+  }
+
+  @supports (-webkit-touch-callout: none) {
+    :root {
+      --bgMobile-pos-x: clamp(19px, 32px, 49px);
+      --bgMobile-pos-y: clamp(48px, 135px, 195px);
+    }
+  }
+}
+
+@media (max-width: 320px) {
+  :root {
+    --bgMobile-size: clamp(110%, 120%, 130%);
+    --bgMobile-pos-x: clamp(5%, 10%, 15%);
+    --bgMobile-pos-y: clamp(30%, 30%, 90%);
+  }
+
+  @supports (-moz-appearance: none) {
+    :root {
+      --bgMobile-pos-x: clamp(8px, 22px, 38px);
+      --bgMobile-pos-y: clamp(55px, 110px, 170px);
+    }
+  }
+
+  @supports (-webkit-touch-callout: none) {
+    :root {
+      --bgMobile-pos-x: clamp(9px, 24px, 39px);
+      --bgMobile-pos-y: clamp(58px, 115px, 175px);
+    }
+  }
+} */
+
+/* @supports (-moz-appearance: none) {
+  
+  :root {
+    --bgLeft-pos-x: clamp(-35rem, -30rem, 50rem);
+    --bgLeft-pos-y: clamp(80px, 100px, 120px);
+    --bgLeft-size: clamp(106rem, 110rem, 115rem);
+
+    --bgRight-pos-x: clamp(-35rem, 20rem, 30rem);
+    --bgRight-pos-y: clamp(30px, 50px, 70px);
+    --bgRight-size: clamp(106rem, 110rem, 115rem);
+  }
+
+  body {
+    background-attachment: fixed !important;;
+  }
+} */
+
+@supports (-webkit-touch-callout: none) {
+  
+  /* :root {
+    --bgLeft-pos-y: clamp(0px, 10px, 20px);
+    --bgRight-pos-y: clamp(0px, 5px, 10px);
+  } */
+  
+  body {
+    background-attachment: local !important;
   }
 }
 
 body {
-  background: 
+  background:
     url('./components/bgLeft.png') no-repeat var(--bgLeft-pos-x) var(--bgLeft-pos-y) / var(--bgLeft-size),
     url('./components/bgRight.png') no-repeat var(--bgRight-pos-x) var(--bgRight-pos-y) / var(--bgRight-size);
   background-color: #131431;
@@ -106,15 +167,10 @@ body {
   justify-content: center;
   margin: 0;
   position: relative;
-  z-index: -10;
+  z-index: 1;
 }
 
-@media (max-width: 480px) {
-  :root {
-    --bgMobile-size: clamp(100%, 107%, 120%);
-    --bgMobile-pos-x: 20%;
-    --bgMobile-pos-y: clamp(38%, 58%, 78%);
-  }
+@media (max-width: 484px) {
 
   body {
     background:
@@ -127,7 +183,7 @@ body {
     justify-content: center;
     margin: 0;
     position: relative;
-    z-index: -10;
+    z-index: 1;
   }
 
   body::after {
@@ -139,7 +195,7 @@ body {
     bottom: 0;
     background-color: rgba(0, 0, 0, 0.8);
     pointer-events: none;
-    z-index: -10;
+    z-index: 1;
   }
 }
 
@@ -152,9 +208,8 @@ body::after {
   bottom: 0;
   background-color: rgba(19, 20, 49, 0.5);
   pointer-events: none;
-  z-index: -10;
+  z-index: 1;
 }
-
 
 .round-tl-br {
   border-top-left-radius: 5rem;
@@ -168,50 +223,88 @@ body::after {
   border-top-right-radius: 0.5rem;
 }
 
+@media(max-width:768px) {
+  .round-tl-br {
+    border-top-left-radius: 2.5rem;
+    border-bottom-right-radius: 2.5rem;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+  
+  .round-footer {
+    border-top-left-radius: 0.3rem;
+    border-top-right-radius: 0.3rem;
+  }
+}
+
 /* Hologram Styling */
 .hologram-container img {
   width: 500px;
   height: auto;
 }
 
-.hologram-container #modal-size{
+.hologram-container #modal-size {
   width: 900px;
   height: auto;
+}
+
+.hologram-container #modal-button {
+  top: 0.5rem;
+  right: 9rem;
 }
 
 @media (max-width: 768px) {
   .hologram-container img {
     width: 400px;
-    height: 200px;
+    height: auto;
   }
 
   .hologram-container #modal-size {
     width: 600px;
-    height: 300px;
+    height: auto;
+  }
+
+  .hologram-container #modal-button {
+    top: 0.2rem;
+    right: 6rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .hologram-container #modal-button {
+    top: 0.2rem;
+    right: 5.5rem;
   }
 }
 
 @media (max-width: 480px) {
   .hologram-container img {
     width: 200px;
-    height: 100px;
+    height: auto;
   }
 
   .hologram-container #modal-size {
     width: 300px;
-    height: 100px;
+    height: auto;
+  }
+
+  .hologram-container #modal-button {
+    top: 0.1rem;
+    right: 3rem;
   }
 }
 
 #enigmatic-ball {
   width: 1.4rem;
   height: 1.4rem;
+  display: inline-block;
 }
 
 @media (max-width: 768px) {
   #enigmatic-ball {
     width: 1.2rem;
     height: 1.2rem;
+    display: inline-block;
   }
 }
 
@@ -286,54 +379,64 @@ body::after {
 }
 
 /* Enemies Styling */
+.card-container:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+.card-image-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.card-image-container.hovered {
+  background-image: url('./components/cards_format/circleHover.png');
+}
+
+.card-image-container:not(.hovered) {
+  background-image: url('./components/cards_format/circle.png');
+}
+
 .card-img{
   width: 12rem;
   height: auto;
   flex-shrink: 0;
 }
 
-.card-circle{
-  width: 13rem;
-  height: auto;
-}
-
 #enemy-laser-drone .card-img {
   height: auto;
   width: 12.5rem;
-  top: 0.2rem;
-  right: 0.4rem;
-  
 }
 
 #enemy-orb-drone .card-img {
   height: auto;
   width: 12.5rem;
-  top: 0.2rem;
-  right: 0.4rem;
 }
 
 #enemy-shinagawa-hammer .card-img {
-  height: 13rem;
-  width: 10.5rem;
-  right: 0.8rem;
-  top: 0rem;
+  height: auto;
+  width: 11.5rem;
 }
 
 #enemy-shinagawa-rider .card-img {
   height: auto;
-  width: 10rem;
+  width: 11rem;
 }
 
 #enemy-shinagawa-batter .card-img {
   height: auto;
-  width: 9.5rem;
-  top: 0.2rem;
-  right: 1rem;
+  width: 10rem;
 }
 
 #enemy-minion-defender .card-img {
-  height: 11rem;
-  width: 12.2rem;
+  height: auto;
+  width: 12rem;
 }
 
 #enemy-minion-double-speed {
@@ -341,24 +444,227 @@ body::after {
 }
 
 #enemy-minion-double-speed .card-img {
-  height: 8rem;
+  height: auto;
   width: 15rem;
-  top: 0.5rem;
-  right: 0.5rem;
-
 }
 
-#enemy-shark .card-img{
-  right: 0.6rem;
+@media(max-width: 1280px) {
+  .card-img{
+    width: 11rem;
+    height: auto;
+    flex-shrink: 0;
+  }
+  
+  #enemy-laser-drone .card-img {
+    height: auto;
+    width: 9.5rem;
+  }
+  
+  #enemy-orb-drone .card-img {
+    height: auto;
+    width: 9.5rem;
+  }
+  
+  #enemy-shinagawa-hammer .card-img {
+    height: auto;
+    width: 10rem;
+  }
+  
+  #enemy-shinagawa-rider .card-img {
+    height: auto;
+    width: 10rem;
+  }
+  
+  #enemy-shinagawa-batter .card-img {
+    height: auto;
+    width: 8.5rem;
+  }
+  
+  #enemy-minion-defender .card-img {
+    height: auto;
+    width: 10rem;
+  }
+  
+  #enemy-minion-double-speed {
+    overflow: hidden;
+  }
+  
+  #enemy-minion-double-speed .card-img {
+    height: auto;
+    width: 13rem;
+  }
 }
 
-@media(min-width: 760px){
+@media(max-width: 1024px) {
+  .card-img{
+    width: 9.5rem;
+    height: auto;
+    flex-shrink: 0;
+  }
+  
+  #enemy-laser-drone .card-img {
+    height: auto;
+    width: 9.5rem;
+  }
+  
+  #enemy-orb-drone .card-img {
+    height: auto;
+    width: 9.5rem;
+  }
+  
+  #enemy-shinagawa-hammer .card-img {
+    height: auto;
+    width: 9rem;
+  }
+  
+  #enemy-shinagawa-rider .card-img {
+    height: auto;
+    width: 8rem;
+  }
+  
+  #enemy-shinagawa-batter .card-img {
+    height: auto;
+    width: 7.5rem;
+  }
+  
+  #enemy-minion-defender .card-img {
+    height: auto;
+    width: 9rem;
+  }
+  
+  #enemy-minion-double-speed {
+    overflow: hidden;
+  }
+  
+  #enemy-minion-double-speed .card-img {
+    height: auto;
+    width: 11rem;
+  }
+}
+
+@media(max-width: 768px) {
+  .card-img{
+    width:9.5rem;
+    height: auto;
+    flex-shrink: 0;
+  }
+
+  #enemy-laser-drone .card-img {
+    height: auto;
+    width: 9.5rem;
+  }
+  
+  #enemy-orb-drone .card-img {
+    height: auto;
+    width: 9.5rem;
+  }
+  
+  #enemy-shinagawa-hammer .card-img {
+    height: auto;
+    width: 9rem;
+  }
+  
+  #enemy-shinagawa-rider .card-img {
+    height: auto;
+    width: 8rem;
+  }
+  
+  #enemy-shinagawa-batter .card-img {
+    height: auto;
+    width: 7.5rem;
+  }
+  
+  #enemy-minion-defender .card-img {
+    height: auto;
+    width: 9rem;
+  }
+  
+  #enemy-minion-double-speed {
+    overflow: hidden;
+  }
+  
+  #enemy-minion-double-speed .card-img {
+    height: auto;
+    width: 11rem;
+  }
+}
+
+@media(max-width: 640px) {
+  .card-img{
+    width:clamp(7rem, 8rem, 10rem);
+    height: auto;
+    flex-shrink: 0;
+  }
+
+  #enemy-laser-drone .card-img {
+    height: auto;
+    width: clamp(6rem, 7rem, 8rem);
+  }
+  
+  #enemy-orb-drone .card-img {
+    height: auto;
+    width: clamp(6rem, 7rem, 8rem);
+  }
+  
+  #enemy-shinagawa-hammer .card-img {
+    height: auto;
+    width: clamp(4rem, 5.5rem, 6rem);
+  }
+  
+  #enemy-shinagawa-rider .card-img {
+    height: auto;
+    width: clamp(4rem, 7rem, 5.5rem);
+  }
+  
+  #enemy-shinagawa-batter .card-img {
+    height: auto;
+    width: clamp(4rem, 5rem, 6rem);
+  }
+  
+  #enemy-minion-defender .card-img {
+    height: auto;
+    width: clamp(4rem, 5.5rem, 6rem);
+  }
+  
+  #enemy-minion-double-speed {
+    overflow: hidden;
+  }
+  
+  #enemy-minion-double-speed .card-img {
+    height: auto;
+    width: clamp(6rem, 8rem, 9rem);
+  }
+}
+
+@media(min-width: 768px){
   .description-image{
     width: attr(data-desktop-width);
   }
 }
 
+video {
+  object-fit: cover;
+}
+
+/* When video goes fullscreen */
+video:fullscreen {
+  object-fit: contain;
+  width: 100vw;
+  height: 100vh;
+}
+
+/* For WebKit-based browsers like Chrome & Safari */
+video:-webkit-full-screen {
+  object-fit: contain;
+  width: 100vw;
+  height: 100vh;
+}
+
 /* NavBar Styling */
+.navbar {
+  -webkit-backface-visibility: hidden;
+}
+
 .custom-bg {
   position: relative;
   background-color: transparent;
@@ -376,7 +682,7 @@ body::after {
   background-size: cover;
   opacity: 0;
   transition: opacity 0.3s ease;
-  z-index: -1;
+  z-index: 1;
 }
 
 .custom-bg:hover::before {

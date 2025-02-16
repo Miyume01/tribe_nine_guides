@@ -1,7 +1,5 @@
 import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
-import cardCircle from './cards_format/circle.png';
-import cardCircleHover from './cards_format/circleHover.png';
 
 function Card({ title, image, url, id }) {
     const navigate = useNavigate();
@@ -12,30 +10,27 @@ function Card({ title, image, url, id }) {
     }
 
     return (
-        <Link className="flex flex-col m-4 max-w-[320px] w-auto h-auto max-h-[280px] text-white p-1 rounded-lg
-            hover:cursor-pointer card relative items-center"
+        <Link className="flex flex-col m-1 mb-2 xl:w-[15rem] lg:w-[12.5rem] sm:w-[10.6rem]
+                max-sm:w-auto w-full h-full xl:h-[16.2rem]
+                lg:h-[15rem] md:h-[12.5rem] sm:h-[12.5rem] mobile:h-auto text-white md:rounded-lg
+                rounded-md hover:cursor-pointer card relative items-center transition-transform
+                duration-300 ease-in-out hover:scale-105 card-container"
             onClick={handleCardClick}
             to={url}
             onMouseEnter={() => setIsHovered(true)}
             onMouseLeave={() => setIsHovered(false)}
             id={id}
             >
-            <div className="w-[100%] max-w-full h-[100%] max-h-full">
+            <div className={`flex items-center justify-center w-full h-[75%]
+                    card-image-container ${isHovered ? "hovered" : ""} overflow-hidden`}>
                 <img
-                    src={ isHovered ? cardCircleHover : cardCircle}
-                    alt="Background Circle encomprising the enemy card image"
-                    className={`absolute -top-1 left-0 object-contain w-[100%] max-w-full h-[80%] max-h-full card-circle`}
+                    src={image}
+                    className="p-2 card-img object-contain"
+                    alt={title}
                 />
-                <div className="flex items-center justify-center w-full h-full overflow-hidden">
-                    <img
-                        src={image}
-                        className="relative rounded-lg max-w-full p-2 card-img max-h-full"
-                        alt={title}
-                    />
-                </div>
             </div>
-            <div className="flex-grow p-2 mt-2 text-center h-[20%] flex items-center justify-center
-                    overflow-hidden text-div">
+            <div className="p-1 min-mobile:h-[25%] h-[35%] w-full flex items-start justify-center
+                    max-sm:text-[0.7rem] md:text-md lg:text-lg text-ellipsis overflow-hidden">
                 {title}
             </div>
         </Link>

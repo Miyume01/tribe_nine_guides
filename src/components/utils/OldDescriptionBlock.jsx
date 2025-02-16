@@ -1,11 +1,10 @@
 import React from 'react';
 
-function DescriptionBlock({descriptionParts = [], setWidth = '440px', centerText = false}) {
+function OldDescriptionBlock({descriptionParts = [], setWidth = '440px', centerText = false}) {
   return (
   <p
     className={`p-1 max-sm:text-[0.7rem] sm:text-sm md:text-lg
-      ${centerText ? 'text-center' : 'lg:text-start md:text-start'} md:w-[27.5rem]
-      mobile:w-[22.5rem]`}
+        ${centerText ? 'text-center' : 'lg:text-start md:text-center'}`}
     >
       {descriptionParts.map((part, index) =>
         part.isImage ? (
@@ -43,4 +42,4 @@ function DescriptionBlock({descriptionParts = [], setWidth = '440px', centerText
   );
 };
 
-export default DescriptionBlock
+export default OldDescriptionBlock

@@ -33,11 +33,11 @@ function Navbar({ navTabs }){
 
     return(
         <div className='relative w-full font-tiny5 text-[0.8rem] lg:text-lg'>
-            <button className={`xl:hidden focus:outline-none relative flex items-center`} onClick={toggleMenu}>
+            <button className={`xl:hidden focus:outline-none relative flex items-center z-50`} onClick={toggleMenu}>
                 <img src={isOpen ? faTimes : faBars} className="w-8 h-8" alt='Menu Icon'/>
             </button>
             <div className="hidden xl:flex flex-row items-center justify-end flex-wrap
-                    relative z-20 text-purple-400 font-semibold">
+                    relative z-30 text-purple-400 font-semibold">
                 {navTabs.map((tab) => (
                     <div key={tab.name} className={`relative text-center max-w-64 h-16 flex-shrink
                         ${isSelected === tab.name ? whenSelected : coolEffects}
@@ -45,7 +45,7 @@ function Navbar({ navTabs }){
                         <div className="bg-ex-mode h-8 w-[2px] mx-1 flex-none"></div>
                         <Link
                             key={tab.name}
-                            className={`text-center max-w-64 h-16 flex-shrink px-2 py-2
+                            className={`text-center max-w-64 h-16 flex-shrink px-2
                                         flex justify-center items-center min-w-40 custom-bg`}
                             onClick={() => handleNavigation(tab.url, tab.name)}
                             onMouseEnter={() => setIsHovered(tab.name)}
@@ -60,8 +60,9 @@ function Navbar({ navTabs }){
                 ))}
             </div>
             <div
-                className={`z-[-1] xl:hidden fixed inset-0 bg-black bg-opacity-50 h-full w-full flex
-                        transition-all duration-200 ease-in-out ${isOpen ? 'translate-x-0' : '-translate-x-full'} rounded-lg`}
+                className={`z-[15] xl:hidden fixed inset-0 bg-black bg-opacity-50 h-full w-full flex
+                        transition-all duration-200 ease-in-out ${isOpen ? 'translate-x-0' : '-translate-x-full'}
+                        rounded-lg navbar`}
                 onClick={toggleMenu}
                 style={{
                     pointerEvents: isOpen ? 'auto' : 'none',
@@ -69,7 +70,7 @@ function Navbar({ navTabs }){
                 >
                 <div
                     className='xl:hidden flex flex-col items-start bg-black text-purple-400 w-[45%] pl-4 pt-16 pb-3
-                        space-y-2 h-full rounded-lg font-semibold z-10 justify-start'
+                        space-y-2 h-full rounded-lg font-semibold z-30 justify-start'
                     onClick={(e) => e.stopPropagation()}
                 >
                     {navTabs.map((tab) => (

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Navigate, Route, BrowserRouter as Router, Routes } from 'react-router-dom';
 import CompMonsters from "./components/compMonsters";
 import Enemies from "./components/enemies";
@@ -20,8 +20,23 @@ import HomePage from "./components/homepage";
 import Layout from './components/layout';
 import NotFound from "./components/notFound";
 import RankUpMats from "./components/rankUpMats";
+import { convertPercentageToPx } from './components/utils/converter';
 
 function App() {
+
+  useEffect(() => {
+    // Run the function on mount
+    convertPercentageToPx();
+
+    // Attach resize event listener
+    window.addEventListener("resize", convertPercentageToPx);
+
+    // Cleanup function to remove event listener on unmount
+    return () => {
+        window.removeEventListener("resize", convertPercentageToPx);
+    };
+  }, []);
+
   return (
     <Router>
       <Routes>

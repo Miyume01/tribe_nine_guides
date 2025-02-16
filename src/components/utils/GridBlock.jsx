@@ -12,12 +12,19 @@ function GridBlock({enemyAtk = 'undefined',
                     isVideo = false,
                     allowModal = true,
                     center = false,
-                    description = []}) {
+                    description = [],
+                    centerText=false}) {
   return (
-    <div className='flex flex-col items-center gap-4 justify-start'>
-        <H2Heading enemyAttack={enemyAtk} tensionEx={tensionEx} center={center}/>
-        <ImageWithModal src={imgSrc} alt={imgAlt} allowModal={allowModal} isVideo={isVideo}/>
-        <DescriptionBlock descriptionParts={description}/>
+    <div className='flex flex-col items-center gap-4 justify-start w-full'>
+        <div className="w-full flex justify-center items-center flex-none h-[10%]">
+          <H2Heading enemyAttack={enemyAtk} tensionEx={tensionEx} center={center} />
+        </div>
+        <div className="w-full flex justify-center items-center">
+          <ImageWithModal src={imgSrc} alt={imgAlt} allowModal={allowModal} isVideo={isVideo} />
+        </div>
+          <div className={`w-full flex justify-center items-start flex-none px-4 ${description.length > 0 ? 'min-h-[26%]' : 'h-auto'}`}>
+            <DescriptionBlock descriptionParts={description} centerText={centerText} />
+          </div>
     </div>
   );
 };

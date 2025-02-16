@@ -6,12 +6,14 @@ import Navbar from './utils/navbar';
 function Head() {
 
     return(
-        <div className='flex flex-col relative max-w-full'>
-            <div className='flex flex-row relative max-h-36 max-w-full justify-between items-center bg-black z-10'>
-                <div className='max-w-64 ml-2 md:ml-6 mx-2 h-16 flex'><Logo /></div>
-                <div className='xl:w-5/6 px-5 xl:order-none overflow-hidden mr-4'><Navbar navTabs={navTabs}/></div>
+        <div className='fixed top-0 left-0 w-full z-30'>
+            <div className='flex flex-col relative w-full'>
+                <div className='flex flex-row relative max-h-36 w-full justify-between items-center bg-black'>
+                    <div className='max-w-64 ml-2 md:ml-6 mx-2 h-16 flex'><Logo /></div>
+                    <div className='xl:w-[80%] max-xl:px-4 xl:order-none overflow-hidden'><Navbar navTabs={navTabs}/></div>
+                </div>
+                <HorizontalLine color='blue' opacity={100} width='100%' marginBottom='' marginTop='' height='4.6px'/>
             </div>
-            <HorizontalLine color='blue' opacity={100} width='100%' marginBottom='' marginTop='' height='4.6px'/>
         </div>
     )
 }

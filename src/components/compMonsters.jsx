@@ -7,11 +7,11 @@ import Tank from './comp_monsters/Tank.png';
 import Technician from './comp_monsters/Technician.png';
 import SuggestedSetForCharacters from './suggestedCharcterSet';
 import DescriptionBlock from './utils/DescriptionBlock';
-// import FancyTable2 from './utils/FancyTable2';
 import H1Heading from './utils/H1Heading';
 import H2Heading from './utils/H2Heading';
 import HorizontalLine from './utils/HorizontalLine';
 import NormalTable2 from './utils/NormalTable2';
+import OldDescriptionBlock from './utils/OldDescriptionBlock';
 function CompMonsters() {
   return (
     <div className='flex flex-col flex-wrap max-h-full w-[80%] md:w-[70%] pb-5 items-center justify-start text-white
@@ -37,14 +37,16 @@ function CompMonsters() {
       <H2Heading enemyAttack='Suggested sets for characters:' center='true'/>
       <HorizontalLine />
 
-      {/* <FancyTable2 tableData={SuggestedSetForCharacters} gridCols={5} gridGap={0} /> */}
       <NormalTable2 tableData={SuggestedSetForCharacters} />
 
       <HorizontalLine />
-        <DescriptionBlock descriptionParts={[
+      <div className='xl:w-[90%] md:w-[80%] w-[90%] pl-2'>
+        <OldDescriptionBlock descriptionParts={[
           {text: 'As the developers have said, the game offers the freedom of playing however the player ', normalText: true, italicText: true},
           {text: 'prefers; hence, depending on preferences, one could run an attack set on Kazuki or Hyakuichitaro.', normalText: true, italicText: true},
-        ]} setWidth='80%'/>
+        ]}
+        />
+      </div>
     </div>
   );
 }

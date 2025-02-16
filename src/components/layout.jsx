@@ -5,9 +5,9 @@ import Head from './head';
 
 function Layout() {
     return(
-        <div className="flex flex-col min-h-screen w-screen">
+        <div className="flex flex-col w-screen mt-16 min-h-dvh">
             <Head />
-            <div className='flex-grow flex flex-col justify-center items-center font-roboto w-full'>
+            <div className='flex-grow flex flex-col justify-center items-center font-roboto w-full z-20'>
                 <Outlet />
             </div>
             <Foot />

@@ -11,10 +11,12 @@ function Holograms() {
             <H1Heading enemyName="Holograms's locations" />
 
             <div className='w-[70%] md:w-[90%] mt-4 text-center -mb-2'>
-                <span className='inline-flex font-roboto text-sm md:text-lg flex-wrap items-center justify-start'>
-                    Each hologram rewards the player 50
-                    <img src={enigmaticEntity} alt="enigmatic entity" className='size-8 mx-1' id='enigmatic-ball'/>
-                    enigmatic entities.
+                <span className='inline-flex font-roboto text-sm md:text-lg flex-wrap items-center justify-center'>
+                    <span className='text-left inline items-center'>
+                        Each hologram rewards the player 50
+                        <img src={enigmaticEntity} alt="enigmatic entity" className='size-8 mx-[2px]' id='enigmatic-ball'/>
+                        enigmatic entities.
+                    </span>
                 </span>
             </div>
 
