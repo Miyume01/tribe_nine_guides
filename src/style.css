@@ -143,17 +143,12 @@ html, body{
   }
 } */
 
-@supports (-webkit-touch-callout: none) {
-  
-  /* :root {
-    --bgLeft-pos-y: clamp(0px, 10px, 20px);
-    --bgRight-pos-y: clamp(0px, 5px, 10px);
-  } */
-  
+/* @supports (-webkit-touch-callout: none) {
+
   body {
     background-attachment: local !important;
   }
-}
+} */
 
 body {
   background:
@@ -168,6 +163,24 @@ body {
   margin: 0;
   position: relative;
   z-index: 1;
+}
+
+.ios-fix body {
+  background: none !important;
+}
+
+.ios-fix body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background:
+    url('./components/bgLeft.png') no-repeat var(--bgLeft-pos-x) var(--bgLeft-pos-y) / var(--bgLeft-size),
+    url('./components/bgRight.png') no-repeat var(--bgRight-pos-x) var(--bgRight-pos-y) / var(--bgRight-size);
+  background-color: #131431;
+  z-index: 1; /* Keeps it behind content */
 }
 
 @media (max-width: 484px) {
@@ -197,6 +210,29 @@ body {
     pointer-events: none;
     z-index: 1;
   }
+
+  .ios-fix body {
+    background: none !important;
+  }
+
+  .ios-fix body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background:
+      url('./components/bgRightMobile.png') no-repeat var(--bgMobile-pos-x) var(--bgMobile-pos-y) / var(--bgMobile-size);
+    background-color: black;
+    z-index: 1; /* Keeps it behind content */
+  }
+
+  /* @supports (-webkit-touch-callout: none) {
+    body {
+      background-attachment: local !important;
+    }
+  } */
 }
 
 body::after {
@@ -591,7 +627,7 @@ body::after {
 
 @media(max-width: 640px) {
   .card-img{
-    width:clamp(7rem, 8rem, 10rem);
+    width:clamp(6rem, 7rem, 9rem);
     height: auto;
     flex-shrink: 0;
   }
@@ -608,12 +644,12 @@ body::after {
   
   #enemy-shinagawa-hammer .card-img {
     height: auto;
-    width: clamp(4rem, 5.5rem, 6rem);
+    width: clamp(4rem, 5.8rem, 6.2rem);
   }
   
   #enemy-shinagawa-rider .card-img {
     height: auto;
-    width: clamp(4rem, 7rem, 5.5rem);
+    width: clamp(4rem, 5.5rem, 7rem);
   }
   
   #enemy-shinagawa-batter .card-img {
@@ -633,6 +669,100 @@ body::after {
   #enemy-minion-double-speed .card-img {
     height: auto;
     width: clamp(6rem, 8rem, 9rem);
+  }
+}
+
+@media(max-width: 400px) {
+  .card-img{
+    width: 8.5rem;
+    height: auto;
+    flex-shrink: 0;
+  }
+
+  #enemy-laser-drone .card-img {
+    height: auto;
+    width: 7rem;
+  }
+  
+  #enemy-orb-drone .card-img {
+    height: auto;
+    width: 7rem;
+  }
+  
+  #enemy-shinagawa-hammer .card-img {
+    height: auto;
+    width: 6rem;
+  }
+  
+  #enemy-shinagawa-rider .card-img {
+    height: auto;
+    width: 6rem;
+  }
+  
+  #enemy-shinagawa-batter .card-img {
+    height: auto;
+    width: 6rem;
+  }
+  
+  #enemy-minion-defender .card-img {
+    height: auto;
+    width: 7rem;
+  }
+  
+  #enemy-minion-double-speed {
+    overflow: hidden;
+  }
+  
+  #enemy-minion-double-speed .card-img {
+    height: auto;
+    width: 10rem;
+  }
+}
+
+@media(max-width: 360px) {
+  .card-img{
+    width: 8.5rem;
+    height: auto;
+    flex-shrink: 0;
+  }
+
+  #enemy-laser-drone .card-img {
+    height: auto;
+    width: 7rem;
+  }
+  
+  #enemy-orb-drone .card-img {
+    height: auto;
+    width: 7rem;
+  }
+  
+  #enemy-shinagawa-hammer .card-img {
+    height: auto;
+    width: 6rem;
+  }
+  
+  #enemy-shinagawa-rider .card-img {
+    height: auto;
+    width: 6rem;
+  }
+  
+  #enemy-shinagawa-batter .card-img {
+    height: auto;
+    width: 5rem;
+  }
+  
+  #enemy-minion-defender .card-img {
+    height: auto;
+    width: 6rem;
+  }
+  
+  #enemy-minion-double-speed {
+    overflow: hidden;
+  }
+  
+  #enemy-minion-double-speed .card-img {
+    height: auto;
+    width: 10rem;
   }
 }
 

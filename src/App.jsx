@@ -37,6 +37,27 @@ function App() {
     };
   }, []);
 
+  useEffect(() => {
+    const checkiOS = async () => {
+      let isIOS = false;
+
+      if (navigator.userAgentData) {
+        // Check for iOS in the new `userAgentData`
+        const platform = await navigator.userAgentData.platform;
+        isIOS = platform && platform.toLowerCase().includes("ios");
+      } else {
+        // Fallback: Check in the older `userAgent`
+        isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent);
+      }
+
+      if (isIOS) {
+        document.documentElement.classList.add("ios-fix");
+      }
+    };
+
+    checkiOS();
+  }, []);
+
   return (
     <Router>
       <Routes>
