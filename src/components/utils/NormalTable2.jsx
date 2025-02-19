@@ -15,7 +15,7 @@ function NormalTable2({ tableData }) {
                     const cell = column[rowIndex];
                     return (
                       <td 
-                        key={colIndex} 
+                        key={colIndex}
                         className={`${rowIndex == 0 ?
                                   'table-border-col' :
                                   (cell && cell.text !== '' ? 'table-border-row' : '')}

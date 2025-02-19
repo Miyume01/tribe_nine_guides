@@ -6,9 +6,9 @@ import H1Heading from './utils/H1Heading';
 
 function Holograms() {
     return (
-        <div className='flex flex-col flex-wrap max-h-full w-[80%] md:w-[70%] pb-5 items-center justify-start text-white
-                hologram-container bg-black bg-opacity-50 round-tl-br'>
-            <H1Heading enemyName="Holograms's locations" />
+        <div className='flex flex-col flex-wrap max-h-full w-full mobile:w-[80%] md:w-[70%] pb-5 items-center justify-start text-white
+        mobile:bg-black mobile:bg-opacity-50 mobile:round-tl-br hologram-container'>
+            <div className='mt-8 md:mt-4'><H1Heading enemyName="Holograms's locations" /></div>
 
             <div className='w-[70%] md:w-[90%] mt-4 text-center -mb-2'>
                 <span className='inline-flex font-roboto text-sm md:text-lg flex-wrap items-center justify-center'>

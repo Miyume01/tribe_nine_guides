@@ -3,7 +3,7 @@ import React from 'react'
 function H2Heading({enemyAttack = 'Undefined', tensionEx = false, center = false, underlineText = false}) {
     return (
         <h2
-            className={`font-orbitron text-md sm:text-lg md:text-xl
+            className={`font-roboto text-md sm:text-lg md:text-xl
             ${enemyAttack === '' ? 'py-[1.1rem]' : ''} w-full`}
             style={{minHeight: '4rem'}}
         >

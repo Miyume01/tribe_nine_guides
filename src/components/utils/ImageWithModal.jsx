@@ -28,6 +28,7 @@ const ImageWithModal = ({ src, alt, allowModal = true, isVideo = false }) => {
       <img
         src={src}
         alt={alt || "Image"}
+        loading='eager'
         className={`${allowModal ? 'cursor-pointer' : 'cursor-default'} md:w-[27.5rem] md:h-[25rem] mobile:w-[22.5rem] mobile:h-[20rem] object-cover`}
         onClick={openModal}
       />
@@ -60,6 +61,7 @@ const ImageWithModal = ({ src, alt, allowModal = true, isVideo = false }) => {
             <img
               src={src}
               alt={alt || "Popup Image"}
+              loading='eager'
               className={`max-w-[70%] max-h-[70%] object-contain
                 ${isAnimating ? 'opacity-100' : 'opacity-0'}
                 transition-opacity duration-300`}

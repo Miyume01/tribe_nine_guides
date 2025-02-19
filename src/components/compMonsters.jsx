@@ -14,9 +14,9 @@ import NormalTable2 from './utils/NormalTable2';
 import OldDescriptionBlock from './utils/OldDescriptionBlock';
 function CompMonsters() {
   return (
-    <div className='flex flex-col flex-wrap max-h-full w-[80%] md:w-[70%] pb-5 items-center justify-start text-white
-      bg-black bg-opacity-50 round-tl-br'>
-        <H1Heading enemyName='Compatible Monsters' />
+    <div className='flex flex-col flex-wrap max-h-full w-full mobile:w-[80%] md:w-[70%] pb-5 items-center justify-start text-white
+      mobile:bg-black mobile:bg-opacity-50 mobile:round-tl-br'>
+        <div className='md:mt-4'><H1Heading enemyName='Compatible Monsters' /></div>
 
       <DescriptionBlock
         descriptionParts={[

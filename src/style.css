@@ -187,7 +187,7 @@ body {
 
   body {
     background:
-      url('./components/bgRightMobile.png') no-repeat var(--bgMobile-pos-x) var(--bgMobile-pos-y) / var(--bgMobile-size);
+      url('./components/bgRightMobile2.png') no-repeat var(--bgMobile-pos-x) var(--bgMobile-pos-y) / var(--bgMobile-size);
     background-color: black;
     background-attachment: fixed;
     overflow-y: auto;
@@ -223,7 +223,7 @@ body {
     width: 100vw;
     height: 100vh;
     background:
-      url('./components/bgRightMobile.png') no-repeat var(--bgMobile-pos-x) var(--bgMobile-pos-y) / var(--bgMobile-size);
+      url('./components/bgRightMobile2.png') no-repeat var(--bgMobile-pos-x) var(--bgMobile-pos-y) / var(--bgMobile-size);
     background-color: black;
     z-index: 1; /* Keeps it behind content */
   }
@@ -396,9 +396,9 @@ body::after {
 } */
 
 .table-border-col {
-  background-color: rgba(0, 3, 1, 0.85);
+  background-color: rgba(0, 3, 1, 0.65);
   box-shadow: 0 0 0 4px #494c4b inset;
-  border: 6px solid black;
+  border: 4px solid black;
   border-collapse: collapse;
   /* outline: 8px solid black; */
   /* outline-offset: -2px; */
@@ -406,7 +406,7 @@ body::after {
 
 .table-border-row {
   background-color: rgba(0, 3, 1, 0.50);
-  border: 6px solid black;
+  border: 4px solid black;
   border-collapse: collapse;
   /* box-shadow: inset 0 0 0 6px transparent; */
   /* box-shadow: inset 0 0 0 4px black; */

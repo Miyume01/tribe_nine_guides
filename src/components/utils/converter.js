@@ -12,9 +12,9 @@ export function convertPercentageToPx() {
     let bgRightPosY = (6 / 100) * screenHeight;
     let bgRightSize = (100 / 100) * screenWidth;
 
-    let bgMobilePosX = (-5 / 100) * screenWidth;
-    let bgMobilePosY = (7 / 100) * screenHeight
-    let bgMobileSize = (115 / 100) * screenWidth;
+    let bgMobilePosX = (-0 / 100) * screenWidth;
+    let bgMobilePosY = (9 / 100) * screenHeight
+    let bgMobileSize = (100 / 100) * screenWidth;
 
     // Detect Firefox
     // if (navigator.userAgent.includes("Firefox")) {

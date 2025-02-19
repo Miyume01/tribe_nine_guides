@@ -61,7 +61,7 @@ function Navbar({ navTabs }){
             </div>
             <div
                 className={`z-[15] xl:hidden fixed inset-0 bg-black bg-opacity-50 h-full w-full flex
-                        transition-all duration-200 ease-in-out ${isOpen ? 'translate-x-0' : '-translate-x-full'}
+                        transition-all duration-200 ease-in-out ${isOpen ? 'translate-x-0' : 'translate-x-full'}
                         rounded-lg navbar`}
                 onClick={toggleMenu}
                 style={{
@@ -70,7 +70,7 @@ function Navbar({ navTabs }){
                 >
                 <div
                     className='xl:hidden flex flex-col items-start bg-black text-purple-400 w-[45%] pl-4 pt-16 pb-3
-                        space-y-2 h-full rounded-lg font-semibold z-30 justify-start'
+                        space-y-2 h-full rounded-lg font-semibold z-30 justify-start fixed right-0'
                     onClick={(e) => e.stopPropagation()}
                 >
                     {navTabs.map((tab) => (
