@@ -2,9 +2,9 @@ import React from 'react';
 import Grid from '../utils/Grid';
 import H1Heading from '../utils/H1Heading';
 import HorizontalLine from '../utils/HorizontalLine';
-import RiderCharge from './enemies_gifs/Rider_charge_NORMAL.gif';
-import RiderFart from './enemies_gifs/Rider_fart_NORMAL.gif';
-import RiderJumpEX from './enemies_gifs/Rider_jump_EX.gif';
+import RiderCharge from './enemies_gifs/webp/Rider_charge_NORMAL.webp';
+import RiderFart from './enemies_gifs/webp/Rider_fart_NORMAL.webp';
+import RiderJumpEX from './enemies_gifs/webp/Rider_jump_EX.webp';
 function ShinagawaTribeRider() {
 
   const NonTensionAtks = [

@@ -2,9 +2,9 @@ import React from 'react';
 import Grid from '../utils/Grid';
 import H1Heading from '../utils/H1Heading';
 import HorizontalLine from '../utils/HorizontalLine';
-import BatterBatSwing from './enemies_gifs/Batter_bat_swing_NORMAL.gif';
-import BatterEX from './enemies_gifs/Batter_EX.gif';
-import BatterKick from './enemies_gifs/Batter_kick_NORMAL.gif';
+import BatterBatSwing from './enemies_gifs/webp/Batter_bat_swing_NORMAL.webp';
+import BatterEX from './enemies_gifs/webp/Batter_EX.webp';
+import BatterKick from './enemies_gifs/webp/Batter_kick_NORMAL.webp';
 
 function ShinagawaTribeBatter() {
 

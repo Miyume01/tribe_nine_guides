@@ -1,10 +1,10 @@
 import React from 'react';
-import Attacker from './comp_monsters/Attacker.png';
-import Healer from './comp_monsters/Healer.png';
-import Shielder from './comp_monsters/Shielder.png';
-import Supporter from './comp_monsters/Supporter.png';
-import Tank from './comp_monsters/Tank.png';
-import Technician from './comp_monsters/Technician.png';
+import Attacker from './comp_monsters/updated/Attacker.png';
+import Healer from './comp_monsters/updated/Healer.png';
+import Shielder from './comp_monsters/updated/Shielder.png';
+import Supporter from './comp_monsters/updated/Supporter.png';
+import Tank from './comp_monsters/updated/Tank.png';
+import Technician from './comp_monsters/updated/Technician.png';
 import SuggestedSetForCharacters from './suggestedCharcterSet';
 import DescriptionBlock from './utils/DescriptionBlock';
 import H1Heading from './utils/H1Heading';
@@ -25,7 +25,7 @@ function CompMonsters() {
         centerText='true'
         />
 
-      <div className="grid grid-cols-1 md:grid-cols-2 xl:gap-4 md:gap-2 gap-1 m-2 object-contain" id='comp-monsters'>
+      <div className="grid grid-cols-1 mobile:grid-cols-2 xl:gap-4 md:gap-2 gap-1 m-2 object-contain" id='comp-monsters'>
           <img src={Supporter} alt="Supporter" />
           <img src={Tank} alt="Tank" />
           <img src={Technician} alt="Technician" />

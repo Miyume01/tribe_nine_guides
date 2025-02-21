@@ -2,8 +2,8 @@ import React from 'react';
 import Grid from '../utils/Grid';
 import H1Heading from '../utils/H1Heading';
 import HorizontalLine from '../utils/HorizontalLine';
-import ScheezeBump from './enemies_gifs/Scheeze_bump.gif';
-import ScheezeCharge from './enemies_gifs/Scheeze_charge_NORMAL.gif';
+import ScheezeBump from './enemies_gifs/webp/Scheeze_bump.webp';
+import ScheezeCharge from './enemies_gifs/webp/Scheeze_charge_NORMAL.webp';
 
 function Scheeze() {
 

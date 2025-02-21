@@ -2,11 +2,11 @@ import React from 'react';
 import Grid from '../utils/Grid';
 import H1Heading from '../utils/H1Heading';
 import HorizontalLine from '../utils/HorizontalLine';
-import EndroneDoubleCombo from './enemies_gifs/Endrone_double_combo_NORMAL.gif';
-import EndroneRockets from './enemies_gifs/Endrone_rockets.gif';
-import EndroneTripleCombo from './enemies_gifs/Endrone_Triple_Combo.gif';
-import EndroneTripleEX from './enemies_gifs/Endrone_triple_EX.gif';
-import EndroneTripleNormal from './enemies_gifs/Endrone_triple_NORMAL.gif';
+import EndroneDoubleCombo from './enemies_gifs/webp/Endrone_double_combo_NORMAL.webp';
+import EndroneRockets from './enemies_gifs/webp/Endrone_rockets.webp';
+import EndroneTripleCombo from './enemies_gifs/webp/Endrone_Triple_Combo.webp';
+import EndroneTripleEX from './enemies_gifs/webp/Endrone_triple_EX.webp';
+import EndroneTripleNormal from './enemies_gifs/webp/Endrone_triple_NORMAL.webp';
 function Endrone() {
 
   const NonTensionAtks = [

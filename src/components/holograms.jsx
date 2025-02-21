@@ -10,8 +10,8 @@ function Holograms() {
         mobile:bg-black mobile:bg-opacity-50 mobile:round-tl-br hologram-container'>
             <div className='mt-8 md:mt-4'><H1Heading enemyName="Holograms's locations" /></div>
 
-            <div className='w-[70%] md:w-[90%] mt-4 text-center -mb-2'>
-                <span className='inline-flex font-roboto text-sm md:text-lg flex-wrap items-center justify-center'>
+            <div className='mobile:w-[70%] md:w-[90%] w-[90%] mt-4 text-center -mb-2'>
+                <span className='inline-flex font-pixelify sm:text-lg mobile:text-md max-mobile:text-sm flex-wrap items-center justify-center'>
                     <span className='text-left inline items-center'>
                         Each hologram rewards the player 50
                         <img src={enigmaticEntity} alt="enigmatic entity" className='size-8 mx-[2px]' id='enigmatic-ball'/>

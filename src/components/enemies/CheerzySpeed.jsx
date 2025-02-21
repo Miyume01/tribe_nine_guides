@@ -3,9 +3,9 @@ import DescriptionBlock from '../utils/DescriptionBlock';
 import Grid from '../utils/Grid';
 import H1Heading from '../utils/H1Heading';
 import HorizontalLine from '../utils/HorizontalLine';
-import CheerzyLungeAndChargeEX from './enemies_gifs/Cheerzy_lunge_and_charge_NORMAL.gif';
-import CheerzyLungeNormal from './enemies_gifs/Cheerzy_lunge_NORMAL.gif';
-import CheerzySpin from './enemies_gifs/Cheerzy_spin.gif';
+import CheerzyLungeAndChargeEX from './enemies_gifs/webp/Cheerzy_lunge_and_charge_NORMAL.webp';
+import CheerzyLungeNormal from './enemies_gifs/webp/Cheerzy_lunge_NORMAL.webp';
+import CheerzySpin from './enemies_gifs/webp/Cheerzy_spin.webp';
 
 function Cheerzy() {
 

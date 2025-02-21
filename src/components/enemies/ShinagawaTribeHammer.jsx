@@ -2,8 +2,8 @@ import React from 'react';
 import Grid from '../utils/Grid';
 import H1Heading from '../utils/H1Heading';
 import HorizontalLine from '../utils/HorizontalLine';
-import HammerSlam from './enemies_gifs/Hammer_slam_NORMAL.gif';
-import HammerTripleEX from './enemies_gifs/Hammer_triple_EX.gif';
+import HammerSlam from './enemies_gifs/webp/Hammer_slam_NORMAL.webp';
+import HammerTripleEX from './enemies_gifs/webp/Hammer_triple_EX.webp';
 
 function ShinagawaTribeHammer() {
 

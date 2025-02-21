@@ -2,11 +2,11 @@ import React from 'react';
 import Grid from '../utils/Grid';
 import H1Heading from '../utils/H1Heading';
 import HorizontalLine from '../utils/HorizontalLine';
-import MameezeJump from './enemies_gifs/Mameeze_jump_NORMAL.gif';
-import MameezeSpin from './enemies_gifs/Mameeze_spin.gif';
-import MameezeSpinParry from './enemies_gifs/Mameeze_spin_parry_NORMAL2.gif';
-import MameezeTripleJumpEX from './enemies_gifs/Mameeze_Triple_Jump.gif';
 import MameezeZyzz from './enemies_gifs/Mameeze_Zyzz.png';
+import MameezeJump from './enemies_gifs/webp/Mameeze_jump_NORMAL.webp';
+import MameezeSpin from './enemies_gifs/webp/Mameeze_spin.webp';
+import MameezeSpinParry from './enemies_gifs/webp/Mameeze_spin_parry_NORMAL2.webp';
+import MameezeTripleJumpEX from './enemies_gifs/webp/Mameeze_Triple_Jump.webp';
 
 function Mameeze() {
 

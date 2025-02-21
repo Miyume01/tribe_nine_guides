@@ -16,7 +16,7 @@ function GridBlock({enemyAtk = 'undefined',
                     centerText=false}) {
   return (
     <div className='flex flex-col items-center gap-4 justify-start w-full'>
-        <div className="w-full flex justify-center items-center flex-none h-[10%]">
+        <div className="w-full flex justify-center items-center flex-none h-[10%] lg:px-4">
           <H2Heading enemyAttack={enemyAtk} tensionEx={tensionEx} center={center} />
         </div>
         <div className="w-full flex justify-center items-center">

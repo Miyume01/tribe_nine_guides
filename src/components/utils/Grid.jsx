@@ -4,7 +4,7 @@ import GridBlock from "./GridBlock";
 function Grid({ gridBlocks = [] }) {
   return (
     <div className={`grid grid-cols-1 ${gridBlocks.length > 1 ? 'lg:grid-cols-2' : ''}
-          lg:gap-16 mx-6 p-2`}>
+          lg:gap-10 mx-6 p-2`}>
       {gridBlocks.map((block, index) => (
         <GridBlock
           key={index}

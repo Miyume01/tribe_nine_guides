@@ -2,9 +2,9 @@ import React from 'react';
 import Grid from '../utils/Grid';
 import H1Heading from '../utils/H1Heading';
 import HorizontalLine from '../utils/HorizontalLine';
-import ShielderBatSwing from './enemies_gifs/Shielder_bat_swing.gif';
-import ShielderDoubleBashEX from './enemies_gifs/Shielder_double_bash_EX.gif';
-import ShielderShieldBash from './enemies_gifs/Shielder_double_bash_NORMAL.gif';
+import ShielderBatSwing from './enemies_gifs/webp/Shielder_bat_swing.webp';
+import ShielderDoubleBashEX from './enemies_gifs/webp/Shielder_double_bash_EX.webp';
+import ShielderShieldBash from './enemies_gifs/webp/Shielder_double_bash_NORMAL.webp';
 
 function MinionInWhiteDefender() {
 

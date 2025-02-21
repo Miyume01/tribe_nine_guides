@@ -2,8 +2,8 @@ import React from 'react';
 import Grid from '../utils/Grid';
 import H1Heading from '../utils/H1Heading';
 import HorizontalLine from '../utils/HorizontalLine';
-import TripleOrbs from './enemies_gifs/orbEXclosedodge-ezgif.com-video-to-gif-converter.gif';
-import BulletHell from './enemies_gifs/orbsnonEXdodge-ezgif.com-video-to-gif-converter.gif';
+import TripleOrbs from './enemies_gifs/webp/orbEXclosedodge-ezgif.com-video-to-gif-converter.webp';
+import BulletHell from './enemies_gifs/webp/orbsnonEXdodge-ezgif.com-video-to-gif-converter.webp';
 
 function OrbDrone() {
 

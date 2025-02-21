@@ -18,7 +18,7 @@ function FancyTable2({
       {tableData.map((column, colIndex) => (
         <div
           key={colIndex}
-          className="flex flex-col text-[10px] md:text-lg font-roboto
+          className="flex flex-col text-[10px] md:text-lg font-pixelify
                     shadow-md "
         >
           {column.map((row, rowIndex) => (

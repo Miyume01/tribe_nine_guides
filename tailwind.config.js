@@ -15,6 +15,7 @@ export default {
         'orbitron': ['Orbitron', 'sans-serif'],
         'roboto': ['Roboto', 'sans-serif'],
         'tiny5': ['Tiny5', 'sans-serif'],
+        'pixelify': ['Pixelify Sans', 'sans-serif'],
         'work-sans': ['Work Sans', 'sans-serif'],
       },
       
@@ -41,7 +42,7 @@ export default {
       },
 
       screens: {
-        'mobile': '480px',
+        'mobile': '484px',
       },
     },
   },

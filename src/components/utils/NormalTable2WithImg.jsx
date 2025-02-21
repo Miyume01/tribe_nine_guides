@@ -19,7 +19,7 @@ function NormalTable2WithImg({ tableData }) {
                                             className={`${cell && cell.text !== '' ? 'table-border-col' : ''}
                                                 text-center xl:h-18 lg:h-12 md:h-16 h-12 p-4 lg:px-2
                                                 text-[0.8rem] lg:text-[1rem] xl:text-[1.2rem]
-                                                font-roboto`}
+                                                font-pixelify`}
                                         >
                                             {cell ? (
                                                 <div className='flex flex-col items-center'>
@@ -39,7 +39,7 @@ function NormalTable2WithImg({ tableData }) {
                                             className={`${cell && cell.text !== '' ? 'table-border-row' : ''}
                                                 text-center xl:h-18 lg:h-12 md:h-16 h-12 p-4  lg:px-2
                                                 text-[0.8rem] lg:text-[1rem] xl:text-[1.2rem]
-                                                font-roboto`}
+                                                font-pixelify`}
                                         >
                                             {cell ? cell.text : ''}
                                         </td>

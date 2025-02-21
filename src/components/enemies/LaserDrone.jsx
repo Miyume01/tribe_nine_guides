@@ -2,8 +2,8 @@ import React from 'react';
 import Grid from '../utils/Grid';
 import H1Heading from '../utils/H1Heading';
 import HorizontalLine from '../utils/HorizontalLine';
-import LaserAttack from './enemies_gifs/Laser_laser_NORMAL.gif';
-import LaserTripleEX from './enemies_gifs/Laser_triple_laser_EX.gif';
+import LaserAttack from './enemies_gifs/webp/Laser_laser_NORMAL.webp';
+import LaserTripleEX from './enemies_gifs/webp/Laser_triple_laser_EX.webp';
 
 function LaserDrone() {
   const NonTensionAtks = [

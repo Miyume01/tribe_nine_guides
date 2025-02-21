@@ -3,7 +3,7 @@ import React from 'react';
 function DescriptionBlock({descriptionParts = [], setWidth = '440px', centerText = false}) {
   return (
   <p
-    className={`p-1 max-sm:text-[0.7rem] sm:text-sm md:text-lg
+    className={`p-1 sm:text-lg mobile:text-md max-mobile:text-sm
       ${centerText ? 'text-center' : 'lg:text-start md:text-start'} md:w-[27.5rem]
       mobile:w-[22.5rem]`}
     >

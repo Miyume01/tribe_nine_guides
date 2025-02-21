@@ -2,9 +2,9 @@ import React from 'react';
 import Grid from '../utils/Grid';
 import H1Heading from '../utils/H1Heading';
 import HorizontalLine from '../utils/HorizontalLine';
-import MinionDoubleAndJumpEX from './enemies_gifs/Minion_double_and_jump_EX.gif';
-import MinionDoubleSwing from './enemies_gifs/Minion_double_NORMAL.gif';
-import MinionStandaloneJumpEX from './enemies_gifs/Minion_standalone_jump_EX.gif';
+import MinionDoubleAndJumpEX from './enemies_gifs/webp/Minion_double_and_jump_EX.webp';
+import MinionDoubleSwing from './enemies_gifs/webp/Minion_double_NORMAL.webp';
+import MinionStandaloneJumpEX from './enemies_gifs/webp/Minion_standalone_jump_EX.webp';
 
 function MinionInWhiteDoubleSpeed() {
   

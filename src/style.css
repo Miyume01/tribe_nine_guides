@@ -280,13 +280,13 @@ body::after {
 }
 
 .hologram-container #modal-size {
-  width: 900px;
+  width: 100%;
   height: auto;
 }
 
 .hologram-container #modal-button {
-  top: 0.5rem;
-  right: 9rem;
+  top: -2rem;
+  right: 2rem;
 }
 
 @media (max-width: 768px) {
@@ -296,37 +296,43 @@ body::after {
   }
 
   .hologram-container #modal-size {
-    width: 600px;
+    width: auto;
     height: auto;
   }
 
   .hologram-container #modal-button {
-    top: 0.2rem;
-    right: 6rem;
+    top: 0.5rem;
+    right: 0.5rem;
   }
 }
 
 @media (max-width: 640px) {
   .hologram-container #modal-button {
-    top: 0.2rem;
-    right: 5.5rem;
+    top: 0.3rem;
+    right: 0.5rem;
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 484px) {
   .hologram-container img {
-    width: 200px;
+    width: 400px;
     height: auto;
+    padding: 0 2rem 0 2rem;
   }
 
-  .hologram-container #modal-size {
-    width: 300px;
-    height: auto;
+  /* .hologram-container #modal-size {
+    width: auto !important;
+    height: auto !important;
+    padding: 0 !important;
   }
 
   .hologram-container #modal-button {
     top: 0.1rem;
-    right: 3rem;
+    right: 0rem;
+  } */
+
+  .hologram-container #modal-container {
+    display: none !important;
   }
 }
 
@@ -334,6 +340,7 @@ body::after {
   width: 1.4rem;
   height: 1.4rem;
   display: inline-block;
+  padding: 0 !important;
 }
 
 @media (max-width: 768px) {
@@ -364,21 +371,21 @@ body::after {
 
 /* Compatible Monsters Styling */
 #comp-monsters img {
-  width:474px;
-  height: 124px;
+  width:30rem;
+  height: auto;
 }
 
 @media (max-width: 1280px) {
   #comp-monsters img {
-    width: 220px;
-    height: 80px;
+    width: 25rem;
+    height: auto;
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 484px) {
   #comp-monsters img {
-    width: 140px;
-    height: 60px;
+    width: 20rem;
+    height: auto;
   }
 }
 
@@ -396,7 +403,7 @@ body::after {
 } */
 
 .table-border-col {
-  background-color: rgba(0, 3, 1, 0.65);
+  background-color: rgba(0, 3, 1, 0.85);
   box-shadow: 0 0 0 4px #494c4b inset;
   border: 4px solid black;
   border-collapse: collapse;
@@ -484,6 +491,10 @@ body::after {
   width: 15rem;
 }
 
+#enemy-shark img {
+  scale: 80%;
+}
+
 @media(max-width: 1280px) {
   .card-img{
     width: 11rem;
@@ -529,6 +540,7 @@ body::after {
     height: auto;
     width: 13rem;
   }
+  
 }
 
 @media(max-width: 1024px) {
@@ -623,6 +635,10 @@ body::after {
     height: auto;
     width: 11rem;
   }
+
+  #enemy-shark img {
+    scale: 85%;
+  }
 }
 
 @media(max-width: 640px) {
@@ -670,9 +686,13 @@ body::after {
     height: auto;
     width: clamp(6rem, 8rem, 9rem);
   }
+
+    #enemy-shark img {
+    scale: 85%;
+  }
 }
 
-@media(max-width: 400px) {
+@media(max-width: 484px) {
   .card-img{
     width: 8.5rem;
     height: auto;
@@ -691,7 +711,7 @@ body::after {
   
   #enemy-shinagawa-hammer .card-img {
     height: auto;
-    width: 6rem;
+    width: 6.5rem;
   }
   
   #enemy-shinagawa-rider .card-img {
@@ -716,6 +736,10 @@ body::after {
   #enemy-minion-double-speed .card-img {
     height: auto;
     width: 10rem;
+  }
+
+  #enemy-shark img {
+    scale: 85%;
   }
 }
 
@@ -763,6 +787,10 @@ body::after {
   #enemy-minion-double-speed .card-img {
     height: auto;
     width: 10rem;
+  }
+
+  #enemy-shark img {
+    scale: 85%;
   }
 }
 

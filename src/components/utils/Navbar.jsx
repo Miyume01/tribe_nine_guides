@@ -33,11 +33,11 @@ function Navbar({ navTabs }){
 
     return(
         <div className='relative w-full font-tiny5 text-[0.8rem] lg:text-lg'>
-            <button className={`xl:hidden focus:outline-none relative flex items-center z-50`} onClick={toggleMenu}>
+            <button className={`xl:hidden focus:outline-none relative flex items-center z-30`} onClick={toggleMenu}>
                 <img src={isOpen ? faTimes : faBars} className="w-8 h-8" alt='Menu Icon'/>
             </button>
             <div className="hidden xl:flex flex-row items-center justify-end flex-wrap
-                    relative z-30 text-purple-400 font-semibold">
+                    relative text-purple-400 font-semibold">
                 {navTabs.map((tab) => (
                     <div key={tab.name} className={`relative text-center max-w-64 h-16 flex-shrink
                         ${isSelected === tab.name ? whenSelected : coolEffects}
@@ -70,7 +70,7 @@ function Navbar({ navTabs }){
                 >
                 <div
                     className='xl:hidden flex flex-col items-start bg-black text-purple-400 w-[45%] pl-4 pt-16 pb-3
-                        space-y-2 h-full rounded-lg font-semibold z-30 justify-start fixed right-0'
+                        space-y-2 h-full rounded-lg font-semibold justify-start fixed right-0'
                     onClick={(e) => e.stopPropagation()}
                 >
                     {navTabs.map((tab) => (

@@ -15,7 +15,7 @@ function FancyTable({ tableData, gridCols = 3, gridGap = 4, setBgColor = false, 
                 {column.map((row, rowIndex) =>(
                     <React.Fragment key={rowIndex}>
                         {rowIndex == 0 ? (
-                            <div className={`text-center font-roboto rounded-sm w-full h-16
+                            <div className={`text-center font-pixelify rounded-sm w-full h-16
                                             flex flex-col items-center justify-center`}
                             style={{
                                 color: row.textColor || 'white',
