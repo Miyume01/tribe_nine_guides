@@ -5,18 +5,27 @@ import React, { useEffect, useState } from "react";
 const ImageWithModal = ({ src, alt, allowModal = true, isVideo = false }) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [isAnimating, setIsAnimating] = useState(false);
-  const [isMobile, setIsMobile] = useState(window.innerWidth <= 480);
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= 484);
   const [hologramActive, setHologramActive] = useState(!!document.querySelector('.hologram-container'));
 
   useEffect(() => {
     const handleResize = () => {
-      setIsMobile(window.innerWidth <= 480);
-      setHologramActive(!!document.querySelector('.hologram-container'));
-      console.log(hologramActive);
+      setIsMobile(window.innerWidth <= 484);
+      console.log(window.innerWidth);
     };
-    
+
+    const observer = new MutationObserver(() => {
+      setHologramActive(!!document.querySelector('.hologram-container'));
+    });
+
+    observer.observe(document.body, { childList: true, subtree: true });
+    handleResize();
     window.addEventListener('resize', handleResize);
-    return () => window.removeEventListener('resize', handleResize);
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+      observer.disconnect();
+    }
   }, []);
 
   const openModal = () => {
@@ -25,7 +34,7 @@ const ImageWithModal = ({ src, alt, allowModal = true, isVideo = false }) => {
   }
 
   const handleOpenModal = () => {
-    if(!isMobile && !hologramActive) {
+    if(!(isMobile && hologramActive)) {
       openModal();
     }
   }

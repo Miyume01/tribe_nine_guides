@@ -371,7 +371,7 @@ body::after {
 
 /* Compatible Monsters Styling */
 #comp-monsters img {
-  width:30rem;
+  width:25rem;
   height: auto;
 }
 
@@ -384,7 +384,7 @@ body::after {
 
 @media (max-width: 484px) {
   #comp-monsters img {
-    width: 20rem;
+    width: 18rem;
     height: auto;
   }
 }
